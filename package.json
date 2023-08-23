@@ -16,6 +16,7 @@
     "plop:component": "plop --plopfile .plop/index.js"
   },
   "dependencies": {
+    "@line/bot-sdk": "^7.5.2",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.0",
     "@types/node": "18.11.15",
