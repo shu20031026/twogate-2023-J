@@ -1,0 +1,14 @@
+import { cleanup, render } from '@testing-library/react';
+import {{properCase name}} from '.';
+
+describe('{{properCase name}} container', () => {
+  afterEach(() => {
+    cleanup();
+  });
+
+  test('rendered', () => {
+    const component = render(<{{properCase name}} />);
+
+    expect(component.container.children.length > 0).toBeTruthy();
+  });
+});
