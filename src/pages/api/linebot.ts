@@ -1,13 +1,9 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import * as line from '@line/bot-sdk';
 import { WebhookRequestBody } from '@line/bot-sdk';
+import { lineClient } from '~/src/linebot/utils/line';
 
-const config = {
-  channelAccessToken: process.env.NEXT_PUBLIC_LINE_CHANNEL_ACCESS_TOKEN!,
-  channelSecret: process.env.NEXT_PUBLIC_LINE_CHANNEL_SECRET!,
-};
-
-const client = new line.Client(config);
+const client = lineClient;
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
@@ -37,6 +33,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         }),
       );
     }
+
     const message = req.body.message;
     res.status(200).json({ message: `${message}というメッセージが送信されました。` });
   } catch (e) {
