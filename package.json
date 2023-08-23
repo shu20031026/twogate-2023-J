@@ -13,7 +13,8 @@
     "test:ci": "jest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "plop:component": "plop --plopfile .plop/index.js"
+    "plop:component": "plop --plopfile .plop/index.js",
+    "migrate:richMenu": "bash ./richmenu.sh"
   },
   "dependencies": {
     "@line/bot-sdk": "^7.5.2",
