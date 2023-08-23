@@ -1,33 +1,17 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { WebhookRequestBody } from '@line/bot-sdk';
-import { lineClient } from '~/src/linebot/utils/line';
 
-const client = lineClient;
+import { usecases } from '~/src/linebot/usecases';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
     if (req.method === 'POST') {
-      const body: WebhookRequestBody = req.body;
-      await Promise.all(
-        body.events.map(async (event) => {
-          switch (event.type) {
-            case 'message': {
-              console.log(event.message);
-              if (event.message.type === 'text') {
-                const getText = event.message.text;
-                await client.replyMessage(event.replyToken, {
-                  type: 'text',
-                  text: getText,
-                });
-              }
-              break;
-            }
-            case 'follow': {
-              break;
-            }
-          }
-        }),
-      );
+      await Promise.all(req.body.events.map(usecases))
+        .then(() => {
+          res.status(200).end();
+        })
+        .catch(() => {
+          res.status(500).end();
+        });
     }
 
     res.status(200);
