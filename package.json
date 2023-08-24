@@ -14,7 +14,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "plop:component": "plop --plopfile .plop/index.js",
-    "migrate:richMenu": "bash ./richmenu.sh"
+    "migrate:richMenu-dev": "bash ./richmenu.sh",
+    "migrate:richMenu-pub": "bash ./richmenu_pub.sh"
   },
   "dependencies": {
     "@line/bot-sdk": "^7.5.2",
