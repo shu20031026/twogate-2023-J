@@ -23,8 +23,8 @@ RES=$(curl -v -X POST https://api.line.me/v2/bot/richmenu \
           },
           "action": {
             "type": "message",
-            "label": "A",
-            "text": "A"
+            "label": "ゲームスタート",
+            "text": "小倉駅に到着"
           }
       },
       {

@@ -1,6 +1,7 @@
 import { Action, Message, TemplateMessage } from '@line/bot-sdk';
 
 export type CustomButton = {
+  type: 'message';
   image?: string;
   BackgroundColor?: string;
   altText?: string;
