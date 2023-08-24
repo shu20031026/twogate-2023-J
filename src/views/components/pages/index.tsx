@@ -1,10 +1,12 @@
 import type { NextPage } from 'next';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 
 import { AuthContext } from '../contexts/authContext';
 import { DefaultLayout } from '../../layouts/Default';
+import { UserProgress } from '~/src/types/models';
 
 const HomePage: NextPage = () => {
+  const [userData, setUserData] = useState<UserProgress | null>(null);
   const { user } = useContext(AuthContext);
 
   return (

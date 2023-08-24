@@ -3,8 +3,7 @@ import { Action, Message, TemplateMessage } from '@line/bot-sdk';
 export type CustomButton = {
   type: 'message';
   image?: string;
-  BackgroundColor?: string;
-  altText?: string;
+  altText: string;
   title: string;
   text: string;
   actions: Action[];
@@ -18,10 +17,10 @@ export const makeCustomButton = (arg: CustomButton): TemplateMessage => {
       type: 'buttons',
       thumbnailImageUrl: arg.image,
       imageSize: 'cover',
-      imageBackgroundColor: arg.BackgroundColor,
+      imageBackgroundColor: '#ffffff',
       title: arg.title,
       text: arg.text.replace(/<br>/g, '\n'),
       actions: arg.actions,
     },
-  };
+  } as const;
 };

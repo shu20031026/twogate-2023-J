@@ -229,3 +229,5 @@ export const noticeList: noticeObj = {
     },
   ],
 };
+
+export const scenarioKeys = Object.keys(noticeList);
