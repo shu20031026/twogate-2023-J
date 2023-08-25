@@ -21,9 +21,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
       <AuthProvider>
         <Authenticated />
 
-        <DefaultLayout>
-          <Component {...pageProps} key={router.asPath} />
-        </DefaultLayout>
+        <Component {...pageProps} key={router.asPath} />
       </AuthProvider>
     </>
   );
