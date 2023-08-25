@@ -9,6 +9,7 @@ export const noticeList: noticeObj = {
   未実装: [
     {
       type: 'message',
+      image: 'images/richmenu-template.png',
       altText: 'シナリオ-1',
       title: '未実装',
       text: 'まだ実装されていないようだ...\nアプデを待て!!',
@@ -43,6 +44,7 @@ export const noticeList: noticeObj = {
     },
     {
       type: 'message',
+      image: '/richmenu-template.png',
       altText: 'シナリオ0',
       title: '小倉駅に到着',
       text: 'まずはどこへいこう？',
