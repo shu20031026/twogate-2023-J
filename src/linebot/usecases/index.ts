@@ -7,7 +7,7 @@ import { messagesUsecase } from './messages';
 
 export const errorMessage: TextMessage = {
   type: 'text',
-  text: 'エラーが発生しました',
+  text: 'コマンドが存在しません。何かが違うようです。',
 };
 
 export const usecases = async (event: WebhookEvent): Promise<void> => {
@@ -18,6 +18,7 @@ export const usecases = async (event: WebhookEvent): Promise<void> => {
       case 'message':
         return await messagesUsecase(event);
       default:
+        lineClient.pushMessage(event.source.userId!, errorMessage);
     }
   } catch (err) {
     lineClient.pushMessage(event.source.userId!, errorMessage).catch;

@@ -43,6 +43,7 @@ export const noticeList: noticeObj = {
     },
     {
       type: 'message',
+      image: 'https://scrapbox.io/files/64e4f9f7a20d5e0035f6557a.png',
       altText: 'シナリオ0',
       title: '小倉駅に到着',
       text: 'まずはどこへいこう？',
@@ -63,6 +64,7 @@ export const noticeList: noticeObj = {
   西小倉へ行く: [
     {
       type: 'message',
+      image: 'https://scrapbox.io/files/64e4f9f7a20d5e0035f6557a.png',
       altText: 'シナリオ1',
       title: '西小倉へ行く',
       text: '西小倉へ来た。\n前方に大きな建物が見える。',

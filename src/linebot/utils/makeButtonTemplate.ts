@@ -16,7 +16,7 @@ export const makeCustomButton = (arg: CustomButton): TemplateMessage => {
     template: {
       type: 'buttons',
       thumbnailImageUrl: arg.image,
-      imageSize: 'cover',
+      imageSize: 'contain',
       imageBackgroundColor: '#ffffff',
       title: arg.title,
       text: arg.text.replace(/<br>/g, '\n'),
