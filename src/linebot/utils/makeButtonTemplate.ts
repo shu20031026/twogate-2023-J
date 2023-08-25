@@ -9,16 +9,14 @@ export type CustomButton = {
   actions: Action[];
 };
 
-const path = process.env.NEXT_PUBLIC_ROOT_PATH;
-
 export const makeCustomButton = (arg: CustomButton): TemplateMessage => {
   return {
     type: 'template',
     altText: arg.altText || 'This is a buttons template',
     template: {
       type: 'buttons',
-      thumbnailImageUrl: `${path}/${arg.image}`,
-      imageSize: 'cover',
+      thumbnailImageUrl: arg.image,
+      imageSize: 'contain',
       imageBackgroundColor: '#ffffff',
       title: arg.title,
       text: arg.text.replace(/<br>/g, '\n'),

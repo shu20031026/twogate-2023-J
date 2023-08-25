@@ -3,24 +3,27 @@ import { fetchUserData } from '../linebot/firestore';
 import { DocumentData } from 'firebase/firestore';
 
 export const useFetchUserData = (uid: string) => {
-  const [responseData, setResponseData] = useState<DocumentData | undefined>(undefined);
-  const [error, setError] = useState<boolean>(false);
-  const [isLording, setIsLording] = useState<boolean>(false);
+  const [responseData, setResponseData] = useState<DocumentData>();
+  const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const fetchData = useCallback(async () => {
-    setIsLording(true);
+    setIsLoading(true);
     try {
       const userData = await fetchUserData(uid);
+      if (userData === undefined) {
+        return null;
+      }
       setResponseData(userData);
-      setError(false);
-      setIsLording(false);
-      return;
+      setError(null);
+      setIsLoading(false);
     } catch (e) {
-      console.error(e);
-      setError(true);
-      setIsLording(false);
-      return;
+      const error = e as Error;
+      console.error(error);
+      setError(error.message || 'An error occurred');
+      setIsLoading(false);
     }
   }, [uid]);
-  return { responseData, error, isLording, fetchData };
+
+  return { responseData, error, isLoading, fetchData };
 };

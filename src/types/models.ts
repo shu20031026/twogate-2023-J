@@ -3,9 +3,9 @@ export interface User {
   name: string;
 }
 
-export interface UserProgress {
+export type UserProgress = {
   userId: string;
   currentLocation: string;
   readScenario: string[];
   items: string[];
-}
+};
