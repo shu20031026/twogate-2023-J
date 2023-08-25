@@ -10,7 +10,27 @@ interface ModalProps {
 
 export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, content }) => {
   useEffect(() => {
-    // ... (変更なし)
+    const originalPosition = window.getComputedStyle(document.body).position;
+    const originalTop = window.getComputedStyle(document.body).top;
+    const scrollY = window.scrollY;
+
+    if (isOpen) {
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.position = originalPosition;
+      document.body.style.top = originalTop;
+      window.scrollTo(0, parseInt(document.body.style.top || '0') * -1);
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.position = originalPosition;
+      document.body.style.top = originalTop;
+      window.scrollTo(0, parseInt(document.body.style.top || '0') * -1);
+      document.body.style.overflow = 'unset';
+    };
   }, [isOpen]);
 
   if (!isOpen) return null;
@@ -50,66 +70,3 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, content }) => {
     </div>
   );
 };
-
-// import React, { useEffect } from 'react';
-// import { StationData } from '~/src/linebot/notices/stationList';
-// import { UserProgress } from '~/src/types/models';
-
-// interface ModalProps {
-//   isOpen: boolean;
-//   onClose: () => void;
-//   content: StationData | undefined;
-// }
-
-// export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, content }) => {
-//   useEffect(() => {
-//     const originalPosition = window.getComputedStyle(document.body).position;
-//     const originalTop = window.getComputedStyle(document.body).top;
-//     const scrollY = window.scrollY;
-
-//     if (isOpen) {
-//       document.body.style.position = 'fixed';
-//       document.body.style.top = `-${scrollY}px`;
-//       document.body.style.overflow = 'hidden';
-//     } else {
-//       document.body.style.position = originalPosition;
-//       document.body.style.top = originalTop;
-//       window.scrollTo(0, parseInt(document.body.style.top || '0') * -1);
-//       document.body.style.overflow = 'unset';
-//     }
-
-//     return () => {
-//       document.body.style.position = originalPosition;
-//       document.body.style.top = originalTop;
-//       window.scrollTo(0, parseInt(document.body.style.top || '0') * -1);
-//       document.body.style.overflow = 'unset';
-//     };
-//   }, [isOpen]);
-
-//   if (!isOpen) return null;
-
-//   return (
-//     <div className='fixed inset-0 flex items-center justify-center z-50'>
-//       <div className='absolute inset-0 bg-black opacity-50 z-10' onClick={onClose}></div>
-//       <div className='w-full p-6 z-20'>
-//         <div className='bg-white p-8 rounded-lg shadow-lg' style={{ maxHeight: '80vh', overflowY: 'auto' }}>
-//           <p>{content?.name}</p>
-//           <p>{content?.text}</p>
-//           <p>
-//             {content?.references.map((ref, index) => {
-//               return (
-//                 <div key={index} style={{ wordWrap: 'break-word', overflowWrap: 'break-word' }}>
-//                   <p>{ref.about}</p>
-//                   <p>{ref.url}</p>
-//                 </div>
-//               );
-//             })}
-//           </p>
-//           <button className='mt-4 bg-blue-500 text-white px-4 py-2 rounded' onClick={onClose}>
-//             閉じる
-//           </button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
