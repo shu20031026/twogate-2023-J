@@ -68,7 +68,7 @@ const ScenarioPage: NextPage = () => {
               <tbody>
                 <tr className='border-b border-blue-200'>
                   <td className='p-2'>プレイヤー名</td>
-                  <td className='p-2'>：{user!.name}</td>
+                  <td className='p-2'>{user!.name}</td>
                 </tr>
               </tbody>
             </table>

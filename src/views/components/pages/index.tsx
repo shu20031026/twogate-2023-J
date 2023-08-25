@@ -40,7 +40,7 @@ const HomePage: NextPage = () => {
               <tbody>
                 <tr className='border-b border-orange-200'>
                   <td className='p-2'>プレイヤー名</td>
-                  <td className='p-2'>：{user!.name}</td>
+                  <td className='p-2'>{user!.name}</td>
                 </tr>
                 {/* <tr>
                   <td className='p-2'>userUid</td>
@@ -59,10 +59,10 @@ const HomePage: NextPage = () => {
                     return (
                       <div key={index} className='w-1/3 p-1.5' onClick={() => openModalHandler(item)}>
                         <div className='w-full bg-white h-40 rounded-lg shadow-md relative'>
-                          <h1 className='text-center font-medium text-gray-800'>{item.name}</h1>
+                          <h1 className='pt-2 text-center font-medium text-gray-800'>{item.name}</h1>
                           <img
                             src={item.image}
-                            className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-auto max-h-32'
+                            className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-auto h-20 object-cover'
                           ></img>
                         </div>
                       </div>
@@ -74,10 +74,10 @@ const HomePage: NextPage = () => {
                           <p className='text-white font-bold text-lg px-4 py-1 rounded whitespace-nowrap'>未開放</p>
                         </div>
                         <div className='w-full bg-gray-300 h-40 rounded-lg shadow-md relative'>
-                          <h1 className='text-center text-white font-medium'>???</h1>
+                          <h1 className='pt-2 text-center text-white font-medium'>???</h1>
                           <img
                             src={item.image}
-                            className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-auto max-h-32 filter blur-md'
+                            className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-auto h-20 object-cover filter blur-md'
                           ></img>
                         </div>
                       </div>
