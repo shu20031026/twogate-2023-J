@@ -14,7 +14,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
   return (
     <>
       <Head>
-        <title />
+        <title>KitaQ</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
 
