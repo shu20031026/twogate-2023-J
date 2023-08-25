@@ -17,15 +17,14 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         <title>KitaQ</title>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
-      <Component {...pageProps} key={router.asPath} />
 
-      {/* <AuthProvider>
+      <AuthProvider>
         <Authenticated />
 
         <DefaultLayout>
           <Component {...pageProps} key={router.asPath} />
         </DefaultLayout>
-      </AuthProvider> */}
+      </AuthProvider>
     </>
   );
 };
