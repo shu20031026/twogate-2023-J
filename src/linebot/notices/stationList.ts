@@ -36,7 +36,7 @@ export const stationList: StationData[] = [
     route: ['鹿児島本線'],
     image:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Moji_Station_20181224.jpg/600px-Moji_Station_20181224.jpg',
-    keyScenario: '門司に行く',
+    keyScenario: '門司へ行く',
     text: `昔は大理駅という名前で現在の門司港駅が門司駅だった。
 門司赤煉瓦プレイスや門司港レトロなど、門司周辺は近代的なロマンを感じる建物が多くある。
 
