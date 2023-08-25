@@ -73,10 +73,10 @@ RES=$(curl -v -X POST https://api.line.me/v2/bot/richmenu \
         "width": 400,
         "height": 270
       },
-      "action": {
-        "type": "message",
-        "label": "シナリオ",
-        "text": "シナリオ"
+       "action": {
+        "type": "uri",
+        "label": "liff",
+        "uri": "https://liff.line.me/2000511797-zgK1QE33"
       }
     }
   ]

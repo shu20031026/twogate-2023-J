@@ -91,69 +91,6 @@ const HomePage: NextPage = () => {
       </div>
     </DefaultLayout>
   );
-  // return (
-  //   <DefaultLayout>
-  //     <div className={'bg-red-50 p-6'}>
-  //       <h1
-  //         style={{ fontSize: '2rem', marginBottom: 8, textAlign: 'center' }}
-  //         className={'text-yellow-500 text-center font-bold my-2'}
-  //       >
-  //         KitaQ
-  //       </h1>
-
-  //       {isLoading ? (
-  //         <div></div>
-  //       ) : (
-  //         <>
-  //           <table>
-  //             <tbody>
-  //               <tr>
-  //                 <td>LINE表示名</td>
-  //                 <td>：{user!.name}</td>
-  //               </tr>
-  //               <tr>
-  //                 <td>userUid</td>
-  //                 <td>：{user!.userUid}</td>
-  //               </tr>
-  //               {/* <tr>
-  //             <td>Data</td>
-  //             <td>：{JSON.stringify(responseData)}</td>
-  //           </tr> */}
-  //             </tbody>
-  //           </table>
-  //           <div className='flex w-full flex-wrap'>
-  //             {userData !== undefined &&
-  //               stationList.map((item, index) => {
-  //                 if (userData.readScenario.includes(item.keyScenario)) {
-  //                   return (
-  //                     <div key={index} className='w-1/3 p-1.5' onClick={() => openModalHandler(item)}>
-  //                       <div className='w-full bg-white h-40 rounded'>
-  //                         <h1 className='text-center font-medium'>{item.name}</h1>
-  //                         <img src={item.image}></img>
-  //                       </div>
-  //                     </div>
-  //                   );
-  //                 } else {
-  //                   return (
-  //                     <div key={index} className='relative w-1/3 p-1.5'>
-  //                       <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 m-0 p-0  z-10 '>
-  //                         <p className='text-white font-bold text-lg'>未開放</p>
-  //                       </div>
-  //                       <div className='w-full bg-gray-500 h-40 rounded'>
-  //                         <h1 className='text-center text-white font-medium'>???</h1>
-  //                         <img src={item.image} className='filter blur-sm grayscale'></img>
-  //                       </div>
-  //                     </div>
-  //                   );
-  //                 }
-  //               })}
-  //           </div>
-  //         </>
-  //       )}
-  //       <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} content={modalContent} />
-  //     </div>
-  //   </DefaultLayout>
-  // );
 };
 
 export default HomePage;
