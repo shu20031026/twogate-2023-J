@@ -17,6 +17,8 @@ const ScenarioPage: NextPage = () => {
     console.log(responseData);
   }, [fetchData]);
 
+  console.log(process.env.NEXT_PUBLIC_LIFF_SCENARIO_ID);
+
   useEffect(() => {
     liff
       .init({
