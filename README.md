@@ -13,5 +13,3 @@
 6. Run the storybook server.
    `yarn storybook`
 7. Open [http://localhost:6006](http://localhost:6006) with your browser to see the result.
-8. Test app.
-   `yarn test`
