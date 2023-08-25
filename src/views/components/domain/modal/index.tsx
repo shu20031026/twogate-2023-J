@@ -50,7 +50,12 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, content }) => {
               </li>
             ))}
           </ul>
-          <p className='text-base leading-relaxed mb-4'>{content?.text}</p>
+          <p
+            className='text-base leading-relaxed mb-4'
+            dangerouslySetInnerHTML={{ __html: content?.text ? content.text.replace(/\n/g, '<br />') : '' }}
+          >
+            {content?.text}
+          </p>
           <h2 className='text-xl mb-2'>参考リンク:</h2>
           {content?.references.map((ref, index) => (
             <div key={index} className='mb-4' style={{ wordWrap: 'break-word', overflowWrap: 'break-word' }}>
