@@ -2,7 +2,7 @@ import { MessageEvent, TextEventMessage, TextMessage } from '@line/bot-sdk';
 
 import { lineClient } from '../../utils/line';
 import { makeReplyMessage } from '../../utils/makeReplyMessage';
-import { noticeList } from '../../notices/notice-list';
+import { commandList, noticeList } from '../../notices/notice-list';
 import { makeCustomButton } from '../../utils/makeButtonTemplate';
 
 const otherMessage: TextMessage = {
@@ -23,6 +23,16 @@ export const messageTextUsecase = async (event: MessageEvent): Promise<void> => 
         return makeReplyMessage(message.text);
       });
       await lineClient.replyMessage(event.replyToken, messages);
+    } else if (key in commandList) {
+      const commands = commandList[key].map((command) => {
+        if (command.type === 'image') {
+          return command;
+        } else if (command.type === 'message') {
+          return makeCustomButton(command);
+        }
+        return makeReplyMessage(command.text);
+      });
+      await lineClient.replyMessage(event.replyToken, commands);
     } else {
       await lineClient.replyMessage(event.replyToken, otherMessage);
     }

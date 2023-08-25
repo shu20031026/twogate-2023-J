@@ -57,12 +57,12 @@ RES=$(curl -v -X POST https://api.line.me/v2/bot/richmenu \
       "bounds": {
         "x": 266,
         "y": 270,
-        "width": 400,
+        "width": 266,
         "height": 270
       },
       "action": {
         "type": "uri",
-        "label": "liff",
+        "label": "駅図鑑",
         "uri": "https://liff.line.me/2000511797-WMOglq88"
       }
     },
@@ -70,13 +70,13 @@ RES=$(curl -v -X POST https://api.line.me/v2/bot/richmenu \
       "bounds": {
         "x": 534,
         "y": 270,
-        "width": 400,
+        "width": 266,
         "height": 270
       },
        "action": {
         "type": "uri",
-        "label": "liff",
-        "uri": "https://liff.line.me/2000511797-zgK1QE33"
+        "label": "シナリオリスト",
+        "uri": "https://liff.line.me/2000511797-WMOglq88/scenario"
       }
     }
   ]

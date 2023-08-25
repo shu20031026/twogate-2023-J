@@ -1,9 +1,55 @@
-import { TextMessage } from '@line/bot-sdk';
+import { ImageMessage, TextMessage } from '@line/bot-sdk';
 import { CustomButton } from '../utils/makeButtonTemplate';
 
 interface noticeObj {
   [key: string]: Array<TextMessage | CustomButton>;
 }
+
+interface commandObj {
+  [key: string]: Array<TextMessage | CustomButton | ImageMessage>;
+}
+
+export const commandList: commandObj = {
+  あそびかた: [
+    {
+      type: 'text',
+      text: '北九州市へようこそ！\n小倉駅にやってきたあなたは１日乗車券を使って北九州市を探索します。',
+    },
+    {
+      type: 'text',
+      text: '出てくるボタンを選択してゲームを進めるとあなたが行動できる選択が表示されます。\nあなたの選択でいい結果になることもあれば悪い結果になることも？',
+    },
+    {
+      type: 'text',
+      text: '北九州市の名所やグルメを回りながら、北九州市の駅のコンプリートを目指しましょう！',
+    },
+    {
+      type: 'message',
+      altText: 'リンク',
+      title: 'あそびかた',
+      text: '以下のリンクから、今までに閲覧したシナリオや通過した駅を見ることができます',
+      actions: [
+        {
+          type: 'uri',
+          label: 'シナリオ一覧',
+          uri: 'https://liff.line.me/2000511797-WMOglq88/scenario',
+        },
+        {
+          type: 'uri',
+          label: '駅図鑑',
+          uri: 'https://liff.line.me/2000511797-WMOglq88',
+        },
+      ],
+    },
+  ],
+  マップ: [
+    {
+      type: 'image',
+      originalContentUrl: 'https://scrapbox.io/files/64e4ee81e7d908001b655aaa.jpeg',
+      previewImageUrl: 'https://scrapbox.io/files/64e4ee81e7d908001b655aaa.jpeg',
+    },
+  ],
+};
 
 export const noticeList: noticeObj = {
   未実装: [
