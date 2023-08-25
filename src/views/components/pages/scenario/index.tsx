@@ -17,37 +17,37 @@ const ScenarioPage: NextPage = () => {
     console.log(responseData);
   }, [fetchData]);
 
-  useEffect(() => {
-    liff
-      .init({
-        liffId: process.env.NEXT_PUBLIC_LIFF_SCENARIO_ID!,
-      })
-      .catch((err) => {
-        console.error('LIFF Initialization failed', err);
-      });
-  }, []);
+  // useEffect(() => {
+  //   liff
+  //     .init({
+  //       liffId: process.env.NEXT_PUBLIC_LIFF_SCENARIO_ID!,
+  //     })
+  //     .catch((err) => {
+  //       console.error('LIFF Initialization failed', err);
+  //     });
+  // }, []);
 
   const userData = responseData as UserProgress;
 
-  const sendMessage = (message: string) => {
-    if (liff.isInClient()) {
-      liff
-        .sendMessages([
-          {
-            type: 'text',
-            text: message,
-          },
-        ])
-        .then(() => {
-          liff.closeWindow();
-        })
-        .catch((err) => {
-          console.error('Error sending message:', err);
-        });
-    } else {
-      alert('この機能はLINEアプリ内でのみ利用可能です。');
-    }
-  };
+  // const sendMessage = (message: string) => {
+  //   if (liff.isInClient()) {
+  //     liff
+  //       .sendMessages([
+  //         {
+  //           type: 'text',
+  //           text: message,
+  //         },
+  //       ])
+  //       .then(() => {
+  //         liff.closeWindow();
+  //       })
+  //       .catch((err) => {
+  //         console.error('Error sending message:', err);
+  //       });
+  //   } else {
+  //     alert('この機能はLINEアプリ内でのみ利用可能です。');
+  //   }
+  // };
   return (
     <DefaultLayout>
       <div className={'bg-blue-100 text-gray-800 p-6'}>
@@ -79,7 +79,7 @@ const ScenarioPage: NextPage = () => {
                       <div key={index} className='w-full p-1.5'>
                         <button
                           className='w-full p-4 bg-white rounded-lg shadow-lg relative'
-                          onClick={() => sendMessage(item)}
+                          // onClick={() => sendMessage(item)}
                         >
                           <h1 className='text-center font-medium text-xl text-gray-800'>{item}</h1>
                         </button>
