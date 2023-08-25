@@ -1,3 +1,5 @@
+declare const liff: any;
+
 import type { NextPage } from 'next';
 import { useContext, useEffect, useState } from 'react';
 
@@ -6,7 +8,6 @@ import { DefaultLayout } from '~/src/views/layouts/Default';
 import type { UserProgress } from '~/src/types/models';
 import { useFetchUserData } from '~/src/hooks/useFetchData';
 import { scenarioKeys } from '~/src/linebot/notices/notice-list';
-import liff from '@line/liff';
 
 const ScenarioPage: NextPage = () => {
   const { user } = useContext(AuthContext);
@@ -20,17 +21,17 @@ const ScenarioPage: NextPage = () => {
   console.log('a');
   console.log(process.env.NEXT_PUBLIC_LIFF_SCENARIO_ID);
 
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.liff) {
-      window.liff
-        .init({
-          liffId: process.env.NEXT_PUBLIC_LIFF_SCENARIO_ID!,
-        })
-        .catch((err) => {
-          console.error('LIFF Initialization failed', err);
-        });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined' && window.liff) {
+  //     window.liff
+  //       .init({
+  //         liffId: process.env.NEXT_PUBLIC_LIFF_SCENARIO_ID!,
+  //       })
+  //       .catch((err) => {
+  //         console.error('LIFF Initialization failed', err);
+  //       });
+  //   }
+  // }, []);
 
   const userData = responseData as UserProgress;
 
@@ -45,10 +46,10 @@ const ScenarioPage: NextPage = () => {
         ])
         .then(() => {
           liff.closeWindow();
-        })
-        .catch((err) => {
-          console.error('Error sending message:', err);
         });
+      // .catch((err) => {
+      //   console.error('Error sending message:', err);
+      // });
     } else {
       alert('この機能はLINEアプリ内でのみ利用可能です。');
     }
