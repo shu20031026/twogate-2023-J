@@ -17,16 +17,19 @@ const ScenarioPage: NextPage = () => {
     console.log(responseData);
   }, [fetchData]);
 
+  console.log('a');
   console.log(process.env.NEXT_PUBLIC_LIFF_SCENARIO_ID);
 
   useEffect(() => {
-    liff
-      .init({
-        liffId: process.env.NEXT_PUBLIC_LIFF_SCENARIO_ID!,
-      })
-      .catch((err) => {
-        console.error('LIFF Initialization failed', err);
-      });
+    if (typeof window !== 'undefined' && window.liff) {
+      window.liff
+        .init({
+          liffId: process.env.NEXT_PUBLIC_LIFF_SCENARIO_ID!,
+        })
+        .catch((err) => {
+          console.error('LIFF Initialization failed', err);
+        });
+    }
   }, []);
 
   const userData = responseData as UserProgress;
