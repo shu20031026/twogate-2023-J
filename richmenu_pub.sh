@@ -1,3 +1,4 @@
+#!/bin/bash
 
 source ./.env.local
 RES=$(curl -v -X POST https://api.line.me/v2/bot/richmenu \
@@ -6,74 +7,86 @@ RES=$(curl -v -X POST https://api.line.me/v2/bot/richmenu \
 -d \
 '{
   "size":{
-      "width":800,
-      "height":540
+    "width":800,
+    "height":540
   },
   "selected": false,
   "name": "LINE Developers Info",
   "chatBarText": "メニュー",
   "areas": [
-      {
-          "bounds": {
-              "x": 0,
-              "y": 0,
-              "width": 400,
-              "height": 270
-          },
-          "action": {
-            "type": "message",
-            "label": "ゲームスタート",
-            "text": "小倉駅に到着"
-          }
+    {
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 533,
+        "height": 270
       },
-      {
-          "bounds": {
-              "x": 400,
-              "y": 0,
-              "width": 400,
-              "height": 270
-          },
-          "action": {
-            "type": "uri",
-            "label": "liff",
-            "uri": "https://liff.line.me/2000511797-WMOglq88"
-          }
-      },
-      {
-          "bounds": {
-              "x": 0,
-              "y": 270,
-              "width": 400,
-              "height": 270
-          },
-          "action": {
-            "type": "message",
-            "label": "C",
-            "text": "C"
-          }
-      },
-      {
-          "bounds": {
-              "x": 400,
-              "y": 270,
-              "width": 400,
-              "height": 270
-          },
-          "action": {
-            "type": "message",
-            "label": "D",
-            "text": "D"
-          }
+      "action": {
+        "type": "message",
+        "label": "ゲームスタート",
+        "text": "小倉駅に到着"
       }
+    },
+    {
+      "bounds": {
+        "x": 534,
+        "y": 0,
+        "width": 266,
+        "height": 270
+      },
+        "action": {
+        "type": "message",
+        "label": "あそびかた",
+        "text": "あそびかた"
+      }
+    }, 
+    {
+      "bounds": {
+        "x": 0,
+        "y": 270,
+        "width": 266,
+        "height": 270
+      },
+      "action": {
+        "type": "message",
+        "label": "マップ",
+        "text": "マップ"
+      }
+    },
+    {
+      "bounds": {
+        "x": 266,
+        "y": 270,
+        "width": 400,
+        "height": 270
+      },
+      "action": {
+        "type": "uri",
+        "label": "liff",
+        "uri": "https://liff.line.me/2000511797-WMOglq88"
+      }
+    },
+    {
+      "bounds": {
+        "x": 534,
+        "y": 270,
+        "width": 400,
+        "height": 270
+      },
+      "action": {
+        "type": "message",
+        "label": "シナリオ",
+        "text": "シナリオ"
+      }
+    }
   ]
 }')
 
 richMenuId=$(echo $RES | jq -r '.richMenuId')
-
 curl -v -X POST https://api-data.line.me/v2/bot/richmenu/$richMenuId/content \
 -H "Authorization: Bearer $NEXT_PUBLIC_LINE_CHANNEL_ACCESS_TOKEN_PUB" \
 -H "Content-Type: image/jpeg" \
--T ./public/richmenu-template.png
+-T ./public/richmenu.png
 
 
 curl -v -X POST https://api.line.me/v2/bot/user/all/richmenu/$richMenuId \
