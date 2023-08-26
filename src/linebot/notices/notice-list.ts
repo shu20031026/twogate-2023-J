@@ -800,6 +800,11 @@ export const noticeList: noticeObj = {
           label: '安部山公園に行く',
           text: '安部山公園に行く',
         },
+        {
+          type: 'message',
+          label: '石田に行く',
+          text: '未実装',
+        },
       ],
     },
   ],
@@ -1423,7 +1428,7 @@ export const noticeList: noticeObj = {
     },
   ],
   //ここから
-  博物館へ行く: [
+  博物館に行く: [
     {
       type: 'text',
       text: 'いのちのたび博物館へやってきた。\n恐竜の化石をメインにこれまでの地球の生態系や歴史をジオラマなどを用いて楽しく説明してくれている博物館だ。',
@@ -1437,7 +1442,17 @@ export const noticeList: noticeObj = {
       actions: [
         {
           type: 'message',
-          label: '未実装',
+          label: '恐竜の化石を見に行く',
+          text: '未実装',
+        },
+        {
+          type: 'message',
+          label: '生物の剥製を見に行く',
+          text: '未実装',
+        },
+        {
+          type: 'message',
+          label: 'ジオラマを見に行く',
           text: '未実装',
         },
       ],
