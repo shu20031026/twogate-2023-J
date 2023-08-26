@@ -352,4 +352,228 @@ export const stationList: StationData[] = [
       },
     ],
   },
+  {
+    name: '南小倉',
+    route: ['日豊本線', '日田彦山線'],
+    image: 'https://scrapbox.io/files/64e8831689d4f5001c4ddd39.jpeg',
+    keyScenario: '南小倉へ行く',
+    text: `
+山田弾薬庫への専用線として設置された信号場が元になった駅。
+
+誰もがお世話になっているであろう、TOTOの本社はここ北九州市にある。
+
+シナリオ内で出てきた謎の黒い物体は、TOTOのCMに出てきた「ビッグベン」「リトルベン」という親子の菌が元ネタ。
+本社にはTOTOミュージアムもあるので近くに来た人はぜひ。
+`,
+    references: [
+      {
+        url: 'https://jp.toto.com/knowledge/visit/museum/',
+        about: 'TOTOミュージアム',
+      },
+    ],
+  },
+  {
+    name: '城野',
+    route: ['日豊本線', '日田彦山線'],
+    image: 'https://scrapbox.io/files/64e887ec8a56c4001c4dcf2e.jpeg',
+    keyScenario: '城野へ向かう',
+    text: `
+日豊本線、日田彦山線を分ける駅。
+この辺りにしては綺麗な外観の駅が特徴。
+
+シナリオ中に出てきた駄菓子屋のモデルは児玉商店だが、どうやら閉店してしまったようだ。
+シナリオ作者思い出の場所。
+`,
+    references: [
+      {
+        url: 'https://ja.wikipedia.org/wiki/城野駅_(JR九州)',
+        about: 'JR城野駅 - Wikipedia',
+      },
+    ],
+  },
+  {
+    name: '安部山公園',
+    route: ['日豊本線'],
+    image: 'https://scrapbox.io/files/64e889e1541d76001ba5f401.jpeg',
+    keyScenario: '安部山公園に行く',
+    text: `
+安部山公園の前にある駅。
+
+近くには福岡三大うどんチェーンの一つである資さんうどんの本店があったりする。
+実は福岡県民にとってはラーメンよりうどんのほうが身近な存在。
+
+ちなみに駅最寄りの資さんが本店というわけではない。資さんうどんが如何に北九州に深く根付いているかがよく分かる。
+北九州市に来たら資さんうどんのかしわごぼ天うどんとおはぎは食べて帰ろう。
+`,
+    references: [
+      {
+        url: 'https://www.sukesanudon.com/',
+        about: '資さんうどん 公式ホームページa',
+      },
+    ],
+  },
+  {
+    name: '下曽根',
+    route: ['日豊本線'],
+    image: 'https://scrapbox.io/files/64e88c81d3bc55001cc9cdff.jpeg',
+    keyScenario: '下曽根に向かう',
+    text: `
+付近には住宅街が広がり、駅の近くには商業施設もたくさんあることから日豊本線の中でも多くの人が利用する駅。
+
+シナリオ内で登場したご当地ヒーローの名前は「キタキュウマン」という。
+福岡県のローカル特撮番組「ドゲンジャーズ」に出演していることや、時折バズる独特なツイートで大人気である。
+`,
+    references: [
+      {
+        url: 'http://kitaqman.jp/',
+        about: 'キタキュウマン【公式】',
+      },
+      {
+        url: 'https://dogengers.com/location/',
+        about: 'ドゲンジャーズ【公式】',
+      },
+    ],
+  },
+  {
+    name: '朽網',
+    route: ['日豊本線'],
+    image: 'https://scrapbox.io/files/64e8c811503e0c001cde38ee.jpeg',
+    keyScenario: '朽網へ向かう',
+    text: `
+北九州の難読地名。「クサミ」と読む。
+子供と遊んでいる公園は朽網中央公園をモデルに書いている。
+地味なネタとして、「さんのーがーはい」という小ネタが出てくるが、他の地域ではあんまり言わないようだ。
+方言だと知らずに使っている福岡県民も多い。
+`,
+    references: [
+      {
+        url: 'https://ja.wikipedia.org/wiki/北九州弁',
+        about: '北九州弁 - Wikipedia',
+      },
+    ],
+  },
+  {
+    name: '石田',
+    route: ['日田彦山線'],
+    image: 'https://scrapbox.io/files/64e8ca85c8b7d4001cf3c993.jpeg',
+    keyScenario: '石田に行く',
+    text: `
+ここから日田彦山線の本番になる駅。
+基本的に周りは住宅街になっており、周辺の住民が移動に使うくらいである。
+日田彦山線に乗るとこの先は田畑や山々が広がるのどかな田園地帯。
+
+北九州はよく「修羅の街」などと言われるが、シナリオにあるようにチンピラが出るかと言われればそんなに治安は悪くない。
+
+…と思う。
+
+ちなみに旧駅舎の方が今の駅舎より立派だったりする。
+`,
+    references: [
+      {
+        url: 'https://www.retro-station.jp/09_kyushu/ishida.html',
+        about: '旧石田駅参考',
+      },
+    ],
+  },
+  {
+    name: '志井公園',
+    route: ['日田彦山線'],
+    image: 'https://scrapbox.io/files/64e8cd20503e0c001cde6ae4.jpeg',
+    keyScenario: '志井公園に向かう',
+    text: `
+近くにアドベンチャープールという人気のプールがあり、夏場の利用者は多くなる。
+何を隠そう志井公園は我らが北九州高専の最寄り駅である。
+一時間に一本ほどしかない電車に乗らねば遅刻してしまうので毎朝日田彦山線は多くの高専生で満たされている。
+
+そういえば先日弊校の公式ホームページがリニューアルされておしゃれになってて、web系技術ユーザーである作者はちょっとテンション上がった。
+`,
+    references: [
+      {
+        url: 'http://adpool.jp/',
+        about: 'アドベンチャープール ホームページ',
+      },
+      {
+        url: 'https://www.kct.ac.jp/',
+        about: '北九州工業高等専門学校ホームページ',
+      },
+    ],
+  },
+  {
+    name: '志井',
+    route: ['日田彦山線'],
+    image: 'https://scrapbox.io/files/64e8cf7b767536001b45c7f7.jpeg',
+    keyScenario: '志井に向かう',
+    text: `
+こんな駅があるんだなという印象すら受ける今時珍しい駅。
+あたりには田んぼと住宅街が広がっている。
+
+シナリオ中でおじいさんがくれたのは湖月堂という北九州で有名な和菓子のお店のもの。
+お土産屋等でもよく売られているので栗饅頭をお土産にどうぞ。
+`,
+    references: [
+      {
+        url: 'https://www.kogetsudo.com/',
+        about: '湖月堂',
+      },
+    ],
+  },
+  {
+    name: '石原町',
+    route: ['日田彦山線'],
+    image: 'https://scrapbox.io/files/64e8d100e6cdbb001cf32b26.jpeg',
+    keyScenario: '石原町に向かう',
+    text: `
+立地的に作中で書かれるほど近くはないが一応平尾台の最寄り駅。
+
+平尾台内で遭遇した異形たちは、全て北九州関連マスコット。
+鍾乳洞の中で見たら怖いでしょう...
+鍾乳洞内部の描写に関してはフィクションが多いです。
+広大なカルスト台地は圧巻で、鍾乳洞内は夏でも涼しく大人から子供まで楽しめる場所なのでドライブやツーリングの際に是非。
+`,
+    references: [
+      {
+        url: 'http://www.hiraodai.jp/',
+        about: '平尾台ホームページ',
+      },
+    ],
+  },
+  {
+    name: '呼野',
+    route: ['日田彦山線'],
+    image: 'https://scrapbox.io/files/64e8d2d8ae86e6001cc9cc7c.jpeg',
+    keyScenario: '呼野へ向かう',
+    text: `
+北九州市の最果て。
+画像を見てのとおり、もはや駅とは思えないくらいに何もない。
+
+本編中出てきた蕎麦屋のモデルは青空みあん。おすすめはデザートのプリンなのでいつか行って食べてみて欲しい。
+`,
+    references: [
+      {
+        url: 'https://tabelog.com/fukuoka/A4004/A400502/40049254/',
+        about: 'そば茶屋 青空みあん - 食べログ',
+      },
+    ],
+  },
+  {
+    name: '競馬場前',
+    route: ['北九州モノレール'],
+    image: 'https://scrapbox.io/files/64e8ec948ce3ce001bd39990.jpeg',
+    keyScenario: '競馬場前へ行く',
+    text: `
+小倉競馬場の前にあるモノレールの駅。
+レースやイベントがある時には人だかりができる。
+ギャンブルは節度を持って楽しもう！
+
+また、度々出てくる「ラーメンだるま」の北方店の最寄り駅でもある。高専からの最寄り店舗のため放課後に利用する高専生も多い。
+北方店は他の店舗と比べて油が控えめでさっぱりした食べ心地である。
+作者のおすすめは汁なしに豚マシと粉チーズを追加カスタマイズ。実質カルボナーラ(過言)。
+`,
+    references: [
+      {
+        url: 'https://www.jra.go.jp/facilities/race/kokura/',
+        about: '小倉競馬場',
+      },
+    ],
+  },
 ];
