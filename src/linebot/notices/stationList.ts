@@ -116,7 +116,7 @@ export const stationList: StationData[] = [
     name: '九州工大前',
     route: ['鹿児島本線'],
     image: 'https://scrapbox.io/files/64e8d49cfddf09001b8418ce.jpeg',
-    keyScenario: '九工大前に向かう',
+    keyScenario: '九州工大前に向かう',
     text: `
     名前の通り九州工業大学 戸畑キャンパスの目の前にある駅。
 
@@ -376,7 +376,7 @@ export const stationList: StationData[] = [
     name: '城野',
     route: ['日豊本線', '日田彦山線'],
     image: 'https://scrapbox.io/files/64e887ec8a56c4001c4dcf2e.jpeg',
-    keyScenario: '城野へ向かう',
+    keyScenario: '城野に向かう',
     text: `
 日豊本線、日田彦山線を分ける駅。
 この辺りにしては綺麗な外観の駅が特徴。
@@ -438,7 +438,7 @@ export const stationList: StationData[] = [
     name: '朽網',
     route: ['日豊本線'],
     image: 'https://scrapbox.io/files/64e8c811503e0c001cde38ee.jpeg',
-    keyScenario: '朽網へ向かう',
+    keyScenario: '朽網に向かう',
     text: `
 北九州の難読地名。「クサミ」と読む。
 子供と遊んでいる公園は朽網中央公園をモデルに書いている。
