@@ -45,8 +45,8 @@ export const commandList: commandObj = {
   マップ: [
     {
       type: 'image',
-      originalContentUrl: 'https://scrapbox.io/files/64e4ee81e7d908001b655aaa.jpeg',
-      previewImageUrl: 'https://scrapbox.io/files/64e4ee81e7d908001b655aaa.jpeg',
+      originalContentUrl: 'https://scrapbox.io/files/64e8d66d861f94001b26e08d.png',
+      previewImageUrl: 'https://scrapbox.io/files/64e8d66d861f94001b26e08d.png',
     },
   ],
 };
@@ -451,7 +451,7 @@ export const noticeList: noticeObj = {
       type: 'message',
       altText: 'シナリオ22',
       title: ' 一目散に逃げる',
-      text: 'どうしようもないと悟り、なるべく怪獣から逃げようと小森江駅の方へ走る。\nその様子を見て怪獣もこちらを追いかけてきたようだ。',
+      text: '怪獣から逃げようと小森江駅の方へ走る。\nその様子を見て怪獣もこちらを追いかけてきたようだ。',
       actions: [
         {
           type: 'message',
@@ -790,25 +790,19 @@ export const noticeList: noticeObj = {
       title: '駄菓子屋に入ってみる',
       text: 'カリカリのえびせんとあつあつのたこ焼きがよく合って美味しい。\n城野を満喫できた。次はどこに行こう',
       actions: [
-        // {
-        //   type: 'message',
-        //   label: '石田に行く',
-        //   text: '石田に行く',
-        // },
+        {
+          type: 'message',
+          label: '石田に行く',
+          text: '石田に行く',
+        },
         {
           type: 'message',
           label: '安部山公園に行く',
           text: '安部山公園に行く',
         },
-        {
-          type: 'message',
-          label: '石田に行く',
-          text: '未実装',
-        },
       ],
     },
   ],
-  // TODO: シナリオ３８方面保留
   安部山公園に行く: [
     {
       type: 'text',
@@ -945,18 +939,18 @@ export const noticeList: noticeObj = {
       actions: [
         {
           type: 'message',
-          label: '朽網に向かう',
-          text: '朽網に向かう',
+          label: '朽網へ行く',
+          text: '朽網へ行く',
         },
       ],
     },
   ],
-  朽網に向かう: [
+  朽網へ行く: [
     {
       type: 'message',
       altText: 'シナリオ47',
       image: 'https://scrapbox.io/files/64e8c811503e0c001cde38ee.jpeg',
-      title: '朽網に向かう',
+      title: '朽網へ行く',
       text: '朽網についた。\n随分疲れてきたしちょっとベンチに座ろうかな。',
       actions: [
         {
@@ -2124,61 +2118,814 @@ export const noticeList: noticeObj = {
         {
           type: 'message',
           label: '全問正解の景品',
-          text: '未実装',
+          text: '全問正解の景品',
         },
       ],
     },
   ],
-  // 全問正解の景品: [
-  //   {
-  //     type: 'text',
-  //     text: '',
-  //   },
-  //   {
-  //     type: 'message',
-  //     altText: '',
-  //     image: '',
-  //     title: '',
-  //     text: '',
-  //     actions: [
-  //       {
-  //         type: 'message',
-  //         label: '',
-  //         text: '',
-  //       },
-  //     ],
-  //   },
-  // ],
-  ダミー: [
+  全問正解の景品: [
     {
       type: 'text',
-      text: '',
+      text: '企救焼のお皿をもらうことができた。\n北九州オリジナルの焼き物らしい。\n渋みのある緑青色でかっこいい！',
     },
     {
       type: 'message',
-      altText: '',
-      image: '',
-      title: '',
-      text: '',
+      altText: 'シナリオ152',
+      image: 'https://scrapbox.io/files/64ea510f2d5409001b05ae5b.jpeg',
+      title: '全問正解の景品',
+      text: 'さて、北九州の難読地名も勉強できたしそろそろ次の駅に行こうか',
       actions: [
         {
           type: 'message',
-          label: '',
-          text: '',
+          label: '折尾へ向かう',
+          text: '折尾へ向かう',
         },
       ],
     },
   ],
-  未実装: [
+  折尾へ向かう: [
+    {
+      type: 'text',
+      text: '折尾へついた。\n電車を降りた途端美味しそうな香りが漂ってきた。',
+    },
     {
       type: 'message',
-      altText: 'シナリオ-1',
-      title: '未実装',
-      text: 'まだ実装されていないようだ...\nシナリオアプデを待て!!',
+      altText: 'シナリオ153',
+      image: 'https://scrapbox.io/files/64e8e56b046eff001b06b4ce.jpeg',
+      title: '折尾へ向かう',
+      text: '男性がホームで何かを売っているようだ。',
       actions: [
         {
           type: 'message',
-          label: '小倉へ戻る',
+          label: '近くに見に行ってみる',
+          text: '近くに見に行ってみる',
+        },
+      ],
+    },
+  ],
+  近くに見に行ってみる: [
+    {
+      type: 'text',
+      text: '東筑軒のかしわめし弁当をホームで立売りしているようだ。\n駅弁を立売りなんてなんだかレトロな感じで素敵だなぁ',
+    },
+    {
+      type: 'text',
+      text: '美味しそうな匂いに我慢ができない！買っていこう',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ154',
+      image: 'https://tochikuken.co.jp/wp-content/uploads/2017/05/background-store.jpg',
+      title: '近くに見に行ってみる',
+      text: 'そんなにお腹減ってないけどどうしようかな…',
+      actions: [
+        {
+          type: 'message',
+          label: '車内で食べる',
+          text: '車内で食べる',
+        },
+        {
+          type: 'message',
+          label: 'お土産に持って帰る',
+          text: 'お土産に持って帰る',
+        },
+      ],
+    },
+  ],
+  車内で食べる: [
+    {
+      type: 'message',
+      altText: 'シナリオ155',
+      image: 'https://scrapbox.io/files/64ea3b7b3db9a9001b636cea.png?type=thumbnail',
+      title: '車内で食べる',
+      text: 'すごく美味しいけれど満腹で立てなくなっちゃった…\n北九州は美味しい物の誘惑が多すぎる...',
+      actions: [
+        {
+          type: 'message',
+          label: 'GameOver...',
+          text: 'GameOver...',
+        },
+      ],
+    },
+  ],
+  お土産に持って帰る: [
+    {
+      type: 'message',
+      altText: 'シナリオ156',
+      image: 'https://tochikuken.co.jp/wp-content/themes/wp-tochikuken-master/images/background-product.jpg',
+      title: '車内で食べる',
+      text: 'やっぱり美味しい物はお腹が減ってるときじゃないとね！\nお土産に買って若松線に乗ろう！',
+      actions: [
+        {
+          type: 'message',
+          label: '本城へ向かう',
+          text: '本城へ向かう',
+        },
+      ],
+    },
+  ],
+  //TODO 157 158消滅
+  本城へ向かう: [
+    {
+      type: 'text',
+      text: '本城についた。\nこの近くには本庄陸上競技場という競技場があってギラヴァンツ北九州というサッカーチームの拠点らしい。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ159',
+      image: 'https://scrapbox.io/files/64e8e6ab7d61bd001cb72931.jpeg',
+      title: '本城に向かう',
+      text: '今日は小学生のサッカーの試合があっているようなのでちょっと見に行ってみる事にした。',
+      actions: [
+        {
+          type: 'message',
+          label: '試合を見に行く',
+          text: '試合を見に行く',
+        },
+      ],
+    },
+  ],
+  試合を見に行く: [
+    {
+      type: 'message',
+      altText: 'シナリオ160',
+      image: 'https://scrapbox.io/files/64ea531f2d5409001b05b279.png',
+      title: '試合を見に行く',
+      text: '今回は白チームと黄チームの試合があるみたい。\nどちらの選手も元気いっぱいでハイレベルだ！。',
+      actions: [
+        {
+          type: 'message',
+          label: '試合後半',
+          text: '試合後半',
+        },
+      ],
+    },
+  ],
+  試合後半: [
+    {
+      type: 'message',
+      altText: 'シナリオ161',
+      image: 'https://scrapbox.io/files/64ea531f2d5409001b05b279.png',
+      title: '試合後半',
+      text: '試合後半、観客の盛り上がりも頂点に達したところで、白 3点、黄 2点と黄チームがやや劣勢',
+      actions: [
+        {
+          type: 'message',
+          label: 'そのまま白チームの勝利！',
+          text: 'そのまま白チームの勝利！',
+        },
+        {
+          type: 'message',
+          label: 'いや、黄チームの逆転だ！',
+          text: 'いや、黄チームの逆転だ！',
+        },
+      ],
+    },
+  ],
+  'そのまま白チームの勝利！': [
+    {
+      type: 'text',
+      text: 'そのままの勢いで勝てるかと思った矢先にゴールを決められてしまった。\n続いて連続ゴールを決められ、試合終了した時には逆転されてしまった…',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ162',
+      image: 'https://scrapbox.io/files/64ea537a8d5207001be89c76.png',
+      title: 'そのまま白チームの勝利！',
+      text: '応援に熱中しすぎてバテてしまった…\n応援したチームも負けてしまって無念だ…',
+      actions: [
+        {
+          type: 'message',
+          label: 'GameOver...',
+          text: 'GameOver...',
+        },
+      ],
+    },
+  ],
+  'いや、黄チームの逆転だ！': [
+    {
+      type: 'text',
+      text: '黄チームにはまだ希望がある。そう思った矢先に黄チームがゴールを決めた。\nそれから連続ゴールを決め、見事逆転勝利を収めた。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ163',
+      image: 'https://scrapbox.io/files/64ea53a74a7a0b001caa5690.png',
+      title: 'いや、黄チームの逆転だ！',
+      text: '応援したチームが勝つことができ、ウキウキ気分で次の駅に向かうのだった。',
+      actions: [
+        {
+          type: 'message',
+          label: '二島へ向かう',
+          text: '二島へ向かう',
+        },
+      ],
+    },
+  ],
+  二島へ向かう: [
+    {
+      type: 'text',
+      text: '二島についた。\n人との交流も旅の醍醐味だと思い近くにいる人に話しかけてみることにした。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ164',
+      image: 'https://scrapbox.io/files/64e8e7e934c00b001b4e41a7.png',
+      title: '二島へ向かう',
+      text: '誰に話しかけよう？',
+      actions: [
+        {
+          type: 'message',
+          label: 'チャラ男に話しかける',
+          text: 'チャラ男に話しかける',
+        },
+        {
+          type: 'message',
+          label: 'わんぱくそうな子供に話しかける',
+          text: 'わんぱくそうな子供に話しかける',
+        },
+      ],
+    },
+  ],
+  チャラ男に話しかける: [
+    {
+      type: 'text',
+      text: '話しかけてみると嫌な顔1つせず色々教えてくれた。\n北九州市の若者は見かけはちょっと怖い人も多いけど結構みんな優しいんだなぁ。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ166',
+      image: 'https://scrapbox.io/files/64ea55be9309d5001b833c37.png',
+      title: 'チャラ男に話しかける',
+      text: 'おすすめは老舗のパン屋「ベーカリーさくらい」らしい。シロヤとはまた違った美味しさだそうだ。',
+      actions: [
+        {
+          type: 'message',
+          label: '老舗のパン屋に行ってみる',
+          text: '老舗のパン屋に行ってみる',
+        },
+      ],
+    },
+  ],
+  わんぱくそうな子供に話しかける: [
+    {
+      type: 'text',
+      text: 'わんぱくそうな子供に話しかけるとまず遊びに誘われた。',
+    },
+    {
+      type: 'text',
+      text: '一度くらいなら...と思いのってあげると楽しくなって時間も忘れて遊んでしまった。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ167',
+      image: 'https://scrapbox.io/files/64ea54b2c58b72001c53aa7f.png',
+      title: 'わんぱくそうな子供に話しかける',
+      text: '気づいた頃にはもう夜だ、、、\n残念ながら終点までは巡れそうにないな。',
+      actions: [
+        {
+          type: 'message',
+          label: 'GameOver...',
+          text: 'GameOver...',
+        },
+      ],
+    },
+  ],
+  老舗のパン屋に行ってみる: [
+    {
+      type: 'text',
+      text: 'ベーカリーさくらいに行ってみると、パンのいい香りが胸いっぱいに広がってきた。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ168',
+      image: 'https://www.fukuoka-navi.jp/wp-content/uploads/2022/12/R51A1680E-EC1E-41CF-A41E-4373BBACDF5E.jpg',
+      title: '老舗のパン屋に行ってみる',
+      text: 'どのパンも美味しそうだが、おすすめしてくれていた明太フランスを購入して\n次の駅に向かおう',
+      actions: [
+        {
+          type: 'message',
+          label: '奥洞海へ向かう',
+          text: '奥洞海へ向かう',
+        },
+      ],
+    },
+  ],
+  奥洞海へ向かう: [
+    {
+      type: 'text',
+      text: '奥洞海にやってきた。\n海とついてるので開けた海が近いのかと思いきや、そうでもないらしい。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ170',
+      image: 'https://scrapbox.io/files/64e8e9310ce2ce001cb3b205.jpeg',
+      title: '奥洞海へ向かう',
+      text: 'ちょっと目的地もなくぶらついてみよう',
+      actions: [
+        {
+          type: 'message',
+          label: '奥洞海を歩く',
+          text: '奥洞海を歩く',
+        },
+      ],
+    },
+  ],
+  奥洞海を歩く: [
+    {
+      type: 'message',
+      altText: 'シナリオ171',
+      image: 'https://scrapbox.io/files/64e984d3605d75001b5e210e.png',
+      title: '奥洞海を歩く',
+      text: '奥洞海を歩いている。\n時折海の音が聞こえる。\n見え無いけれど近くにはあるようだ。',
+      actions: [
+        {
+          type: 'message',
+          label: '奥洞海をもっと歩く',
+          text: '奥洞海をもっと歩く',
+        },
+      ],
+    },
+  ],
+  奥洞海をもっと歩く: [
+    {
+      type: 'message',
+      altText: 'シナリオ172',
+      image: 'https://scrapbox.io/files/64e984d3605d75001b5e210e.png',
+      title: '奥洞海をもっと歩く',
+      text: '奥洞海をもっと歩いている。\n自然と住宅街が入り乱れる街並みだ。目の保養になる。',
+      actions: [
+        {
+          type: 'message',
+          label: '奥洞海をさらに歩く',
+          text: '奥洞海をさらに歩く',
+        },
+      ],
+    },
+  ],
+  奥洞海をさらに歩く: [
+    {
+      type: 'message',
+      altText: 'シナリオ173',
+      image: 'https://scrapbox.io/files/64e984d3605d75001b5e210e.png',
+      title: '奥洞海をさらに歩く',
+      text: '奥洞海をさらに歩いている。\n住宅だけじゃなく食事処も時々見える。',
+      actions: [
+        {
+          type: 'message',
+          label: '奥洞海を先へ歩く',
+          text: '奥洞海を先へ歩く',
+        },
+      ],
+    },
+  ],
+  奥洞海を先へ歩く: [
+    {
+      type: 'message',
+      altText: 'シナリオ174',
+      image: 'https://scrapbox.io/files/64e984d3605d75001b5e210e.png',
+      title: '奥洞海を先へ歩く',
+      text: '奥の方を見てみると駅があるような気がする。\nあれ？もしかして次の駅まで歩いてきちゃった？',
+      actions: [
+        {
+          type: 'message',
+          label: '藤ノ木へ向かう',
+          text: '藤ノ木へ向かう',
+        },
+      ],
+    },
+  ],
+  藤ノ木へ向かう: [
+    {
+      type: 'message',
+      altText: 'シナリオ175',
+      image: 'https://scrapbox.io/files/64e8ea8cc8b7d4001cf51d6d.jpeg',
+      title: '藤ノ木へ向かう',
+      text: '藤ノ木についた。\n日も暮れかけているし急いで終点の若松を目指そう。',
+      actions: [
+        {
+          type: 'message',
+          label: '若松へ向かう',
+          text: '若松へ向かう',
+        },
+      ],
+    },
+  ],
+  若松へ向かう: [
+    {
+      type: 'text',
+      text: '若松へついた。\n今回の旅の最終地点だ',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ178',
+      image: 'https://scrapbox.io/files/64e8eba37aca91001b67fc7f.jpeg',
+      title: '若松へ向かう',
+      text: '長旅だったのもあって、北九州の空はもう暗くなっている。\n今からどこへ向かおうか。',
+      actions: [
+        {
+          type: 'message',
+          label: '若戸大橋に行く',
+          text: '若戸大橋に行く',
+        },
+      ],
+    },
+  ],
+  若戸大橋に行く: [
+    {
+      type: 'text',
+      text: '夕焼け空をバックに赤く輝く若戸大橋がそこにはあった。',
+    },
+    {
+      type: 'text',
+      text: 'この旅のことを考えると、いろんな思い出が浮かんでくる。\nたくさんハプニングはあったものの、楽しい思い出がたくさんできたな。',
+    },
+    {
+      type: 'text',
+      text: '北九州はすごく素敵な街だった。\n次は北九州の他の街も巡ってみたいな',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ199',
+      image: 'https://amatavi.life/wp-content/uploads/2017/09/e71432fa884adc70cb16ac07efddc68f.jpg',
+      title: '若戸大橋に行く',
+      text: 'Game Clear!!!\nEND4 : 次の旅へと',
+      actions: [
+        {
+          type: 'message',
+          label: '小倉に戻って他の駅にも行って見よう！',
+          text: '小倉駅に到着',
+        },
+      ],
+    },
+  ],
+  石田に行く: [
+    {
+      type: 'text',
+      text: '石田についた。\n無人駅で周りには田畑が広がっていて穏やかな田舎町といった雰囲気だ。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ200',
+      image: 'https://scrapbox.io/files/64e8ca85c8b7d4001cf3c993.jpeg',
+      title: '石田に行く',
+      text: '田んぼに囲まれたあぜ道を親子が歩いている。\n女の子が父親になにかねだっているようだ。',
+      actions: [
+        {
+          type: 'message',
+          label: '聞き耳を立ててみる',
+          text: '聞き耳を立ててみる',
+        },
+      ],
+    },
+  ],
+  聞き耳を立ててみる: [
+    {
+      type: 'text',
+      text: '女の子「おとうさ～ん。びびんこして～。」',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ201',
+      title: '聞き耳を立ててみる',
+      text: 'びびんこ?なんのことだろう。聞き間違いだろうか。',
+      actions: [
+        {
+          type: 'message',
+          label: '様子をみる',
+          text: '様子をみる',
+        },
+      ],
+    },
+  ],
+  様子をみる: [
+    {
+      type: 'text',
+      text: '父親「しかたないなぁ。はい、のって」',
+    },
+    {
+      type: 'text',
+      text: '女の子「やったー！びびんこたかいたかい！」',
+    },
+    {
+      type: 'text',
+      text: '父親は女の子を肩車している。\n北九州では肩車のことを「びびんこ」というようだ。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ202',
+      image:
+        'https://2.bp.blogspot.com/-IIAg89CsYDA/WTtWti_vfZI/AAAAAAABEwo/7fjqb9F72w4GO6GEDBcq9UHhUoJS4V1jQCLcB/s800/chichinohi_kataguruma.png',
+      title: '様子をみる',
+      text: '北九弁は面白いなぁ。\n微笑ましい田舎の風景を見て心もほっこりしたし、そろそろ次の駅を目指そう',
+      actions: [
+        {
+          type: 'message',
+          label: '志井公園へ向かう',
+          text: '志井公園へ向かう',
+        },
+      ],
+    },
+  ],
+  志井公園へ向かう: [
+    {
+      type: 'message',
+      altText: 'シナリオ203',
+      image: 'https://scrapbox.io/files/64e8cd20503e0c001cde6ae4.jpeg',
+      title: '志井公園に向かう',
+      text: '志井公園についた。\n大きなプールに公園と、様々な遊べるところが用意されている。\n近くには高専があるようだ。',
+      actions: [
+        {
+          type: 'message',
+          label: '高専に行く',
+          text: '高専に行く',
+        },
+      ],
+    },
+  ],
+  高専に行く: [
+    {
+      type: 'text',
+      text: 'きつい坂を登った先で北九州高専についた。運動場を走り回っている学生が見える。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ204',
+      image: 'https://scrapbox.io/files/64e991424397b0001ccc5d2b.jpeg',
+      title: '高専に行く',
+      text: 'お昼時だし学食が空いているかもしれないな。\nちょっと覗いてみよう',
+      actions: [
+        {
+          type: 'message',
+          label: '学食に行く',
+          text: '学食に行く',
+        },
+      ],
+    },
+  ],
+  学食に行く: [
+    {
+      type: 'text',
+      text: '学食の人気メニューは肉ラーどんという肉うどんの中華麺版のようなものらしい。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ205',
+      image: 'https://pbs.twimg.com/profile_images/665910126176432128/XXCebBs5_400x400.jpg',
+      title: '学食に行く',
+      text: 'シンプルな味付けながらクセになる美味しさだった\nそろそろ次の駅に行こう。',
+      actions: [
+        {
+          type: 'message',
+          label: '志井に向かう',
+          text: '志井に向かう',
+        },
+      ],
+    },
+  ],
+  志井に向かう: [
+    {
+      type: 'text',
+      text: '志井にやってきた\n周りを山に囲まれた無人駅でトイレすらもない。\nこれが本当に電車の駅なのかと思うほど簡素だ。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ206',
+      image: 'https://scrapbox.io/files/64e8cf7b767536001b45c7f7.jpeg',
+      title: '志井に向かう',
+      text: 'ちょっとこの辺りで休憩しようか。',
+      actions: [
+        {
+          type: 'message',
+          label: 'しばしの休憩',
+          text: 'しばしの休憩',
+        },
+      ],
+    },
+  ],
+  しばしの休憩: [
+    {
+      type: 'text',
+      text: 'あたりは自然に囲まれていてのどかな感じ。\n空気が澄んでいて気持ちがいい。\n次の便は一時間後らしいしのんびり休もう。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ207',
+      image: 'https://scrapbox.io/files/64e99ec0323bcd001c9d6a9e.png',
+      title: 'しばしの休憩',
+      text: 'ゆっくりしているとおじいさんが話しかけてきた。',
+      actions: [
+        {
+          type: 'message',
+          label: 'おじいさんと話す',
+          text: 'おじいさんと話す',
+        },
+      ],
+    },
+  ],
+  おじいさんと話す: [
+    {
+      type: 'text',
+      text: 'おじいさんは畑仕事の帰りらしい。\n駅の近くに見慣れない人がいるなんて珍しいから声をかけたのだそう。',
+    },
+    {
+      type: 'text',
+      text: '北九州を各駅停車で止まって旅をしていると話すとおじいさんは興味深く聞いてくれた。',
+    },
+    {
+      type: 'text',
+      text: 'おじいさんは\n「まぁ、これでも食べんね」\nといってお菓子を差し出してくれた。\n湖月堂の栗饅頭というらしい。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ208',
+      image: 'https://www.kogetsudo.com/product/img/kurimanjyu_main_photo.jpg',
+      title: 'おじいさんと話す',
+      text: '厚意に甘えてもらって食べさせてもらった。\n甘くて美味しい。\nそうこうしていると電車がやってきた。',
+      actions: [
+        {
+          type: 'message',
+          label: '石原町へ向かう',
+          text: '石原町へ向かう',
+        },
+      ],
+    },
+  ],
+  石原町へ向かう: [
+    {
+      type: 'message',
+      altText: 'シナリオ208',
+      image: 'https://scrapbox.io/files/64e8d100e6cdbb001cf32b26.jpeg',
+      title: '石原町へ向かう',
+      text: 'この近くに日本三大カルストの1つにもなっている平尾台があるらしい。\nそこに行ってみよう',
+      actions: [
+        {
+          type: 'message',
+          label: '平尾台に向かう',
+          text: '平尾台に向かう',
+        },
+      ],
+    },
+  ],
+  平尾台に向かう: [
+    {
+      type: 'text',
+      text: '暫く歩くと平尾台についた。\n草原から石がぼこぼこ出ていたり、自然にできたとは思えない不思議な光景が広がっている。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ209',
+      image: 'https://scrapbox.io/files/64ea259cda2629001b6d3c1c.jpeg',
+      title: '平尾台に向かう',
+      text: '近くに鍾乳洞があるらしい、そこへ行ってみよう。',
+      actions: [
+        {
+          type: 'message',
+          label: '鍾乳洞へ入る',
+          text: '鍾乳洞へ入る',
+        },
+      ],
+    },
+  ],
+  鍾乳洞へ入る: [
+    {
+      type: 'text',
+      text: '貸出サンダルを借りて鍾乳洞へ入ると薄暗い空間に足元には冷たい水が流れている。\n今は夏だというのに中はひんやりしていて涼しい。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ210',
+      image:
+        'https://www.crossroadfukuoka.jp/storage/tourism_attractions/11420/responsive_images/rY6VI9eHVzs8posLvKpAUkLIi3c77GHHDRJ7s9e9__1024_768.jpg',
+      title: '鍾乳洞へ入る',
+      text: '自然形成されている鍾乳石の数々はどれも美しく\n永い時間をかけて自然が作り出した美に感動した。',
+      actions: [
+        {
+          type: 'message',
+          label: 'せんぶつ茶屋に行く',
+          text: 'せんぶつ茶屋に行く',
+        },
+      ],
+    },
+  ],
+  せんぶつ茶屋に行く: [
+    {
+      type: 'text',
+      text: '近くにいい感じの茶店があったので、そこに行ってみることにした。',
+    },
+    {
+      type: 'text',
+      text: 'どうやらカルストまんじゅうというのが名物らしい。\nさつま芋の餡の素朴な甘さが癖になる逸品だ。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ211',
+      image: 'https://imgfp.hotp.jp/IMGH/28/13/P018202813/P018202813_238.jpg',
+      title: 'せんぶつ茶屋に行く',
+      text: 'さて、いい感じに楽しめたし次の駅に向かうか。',
+      actions: [
+        {
+          type: 'message',
+          label: '呼野へ向かう',
+          text: '呼野へ向かう',
+        },
+      ],
+    },
+  ],
+  呼野へ向かう: [
+    {
+      type: 'message',
+      altText: 'シナリオ212',
+      image: 'https://scrapbox.io/files/64e8d2d8ae86e6001cc9cc7c.jpeg',
+      title: '呼野へ向かう',
+      text: '呼野についた。\n近くにはそば屋があるらしい。',
+      actions: [
+        {
+          type: 'message',
+          label: 'そば屋に行く',
+          text: 'そば屋に行く',
+        },
+      ],
+    },
+  ],
+  そば屋に行く: [
+    {
+      type: 'text',
+      text: 'そば屋についた。古民家を改装した店のようで、祖父母の家を思い出す。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ213',
+      image: 'https://blog-imgs-134.fc2.com/y/a/y/yayoicafe/0548-07.jpg',
+      title: 'そば屋に行く',
+      text: 'そば屋に来たからにはそばを食べるのが一番だろうということでそばを頼んだ。',
+      actions: [
+        {
+          type: 'message',
+          label: 'そばを食べる',
+          text: 'そばを食べる',
+        },
+      ],
+    },
+  ],
+  そばを食べる: [
+    {
+      type: 'text',
+      text: '出てきたそばは、細切りで清涼感たっぷりだった。\n食べてみると、少し硬めで弾力感があり、噛みごたえがあって美味しい。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ214',
+      image: 'https://tblg.k-img.com/restaurant/images/Rvw/185017/640x640_rect_64601b33ed9ffb1c2fe6723a13a0c134.jpg',
+      title: 'そばを食べる',
+      text: 'あっという間に食べ終わってしまった。',
+      actions: [
+        {
+          type: 'message',
+          label: 'そば湯を飲む',
+          text: 'そば湯を飲む',
+        },
+      ],
+    },
+  ],
+  そば湯を飲む: [
+    {
+      type: 'text',
+      text: '食べきったタイミングでそば湯が出てきた。\nつゆに入れて飲んでみる。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ215',
+      title: 'そば湯を飲む',
+      text: 'ほどよくあったかくて体の芯に染み込んでいくようだ。\nさて、お会計をしようか。',
+      actions: [
+        {
+          type: 'message',
+          label: '日田彦の旅を終えて',
+          text: '日田彦の旅を終えて',
+        },
+      ],
+    },
+  ],
+  日田彦の旅を終えて: [
+    {
+      type: 'text',
+      text: '日田彦沿いは北九州の中でも特に田舎な印象だった。都会の流れの速さに疲れた時にふと来たくなるような場所が多い。',
+    },
+    {
+      type: 'text',
+      text: 'いつかはこんなのどかな町に住めたらいいな。\nそう思いながら帰路につくのだった。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ216',
+      image: 'https://www.kitakyushu-museum.jp/images/2018/medium-20180605_a276ecf24e87bafd86c4b1d7a8b8558b.jpg',
+      title: '日田彦の旅を終えて',
+      text: 'Game Clear!!!\nEND3 : いつかの我が家',
+      actions: [
+        {
+          type: 'message',
+          label: '小倉に戻って他の駅にも行って見よう！',
           text: '小倉駅に到着',
         },
       ],
