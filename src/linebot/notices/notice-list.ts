@@ -1442,22 +1442,713 @@ export const noticeList: noticeObj = {
       actions: [
         {
           type: 'message',
-          label: '恐竜の化石を見に行く',
-          text: '未実装',
+          label: '恐竜の骨格標本を見に行く',
+          text: '恐竜の骨格標本を見に行く',
         },
         {
           type: 'message',
           label: '生物の剥製を見に行く',
-          text: '未実装',
+          text: '生物の剥製を見に行く',
         },
         {
           type: 'message',
           label: 'ジオラマを見に行く',
+          text: 'ジオラマを見に行く',
+        },
+      ],
+    },
+  ],
+  恐竜の骨格標本を見に行く: [
+    {
+      type: 'message',
+      altText: 'シナリオ121',
+      image: 'https://scrapbox.io/files/64ea4539da2629001b6e57e5.webp',
+      title: '恐竜の化石を見に行く',
+      text: '巨大な恐竜の標本はどれも圧巻。\n中でもティラノサウルス スーの全身レプリカは迫力満点',
+      actions: [
+        {
+          type: 'message',
+          label: '化石を見ていると...',
+          text: '化石を見ていると...',
+        },
+      ],
+    },
+  ],
+  生物の剥製を見に行く: [
+    {
+      type: 'text',
+      text: '本物と見間違えるほどにリアルな標本がズラッとで並んでいる。\n今にも動き出してしまいそうで少し怖いな、、、',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ122',
+      image: 'https://scrapbox.io/files/64ea45a21d66db001cece017.jpeg',
+      title: '生物の剥製を見に行く',
+      text: 'なんて思っていたら突然上から巨大な魚の模型が降ってきてそのまま食べられてしまった...',
+      actions: [
+        {
+          type: 'message',
+          label: 'GameOver...',
+          text: 'GameOver...',
+        },
+      ],
+    },
+  ],
+  ジオラマを見に行く: [
+    {
+      type: 'text',
+      text: 'エンバイラマ館という実際に展示物が動いて、まるでタイムスリップしたかのような体験ができる展示に行ってみた。',
+    },
+    {
+      type: 'text',
+      text: '「恐竜がいたらこんなふうに動くんだろうな」\nと感じるリアルな動きに圧倒された。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ123',
+      image: 'https://scrapbox.io/files/64ea45d455fbc4001c6a9f2f.jpeg',
+      title: 'ジオラマを見に行く',
+      text: '恐竜の生活や絶滅するまでの過程をよく表現していて、\nついついのめり込んでしまった。',
+      actions: [
+        {
+          type: 'message',
+          label: 'ワキノサトウリュウをよく見てみる',
+          text: 'ワキノサトウリュウをよく見てみる',
+        },
+        {
+          type: 'message',
+          label: 'イグアノドンの巣を見てみる',
+          text: 'イグアノドンの巣を見てみる',
+        },
+      ],
+    },
+  ],
+  '化石を見ていると...': [
+    {
+      type: 'text',
+      text: '化石を見ていると、突然何かが頭に降ってきた。\n何が落ちてきたが確認してみるとどうやら化石のようだ',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ124',
+      image: 'https://scrapbox.io/files/64ea457672472e001b840d6e.png',
+      title: '化石を見ていると...',
+      text: 'どこからか突然降ってきたようだ...\nひとまずカバンにしまって館内を散策しよう。',
+      actions: [
+        {
+          type: 'message',
+          label: '生物の剥製を見に行く',
+          text: '生物の剥製を見に行く',
+        },
+        {
+          type: 'message',
+          label: 'ジオラマを見に行く',
+          text: 'ジオラマを見に行く',
+        },
+      ],
+    },
+  ],
+  ワキノサトウリュウをよく見てみる: [
+    {
+      type: 'text',
+      text: '福岡で発見されたという恐竜\n「ワキノサトウリュウ」\nを見てみることにした。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ125',
+      image: 'https://scrapbox.io/files/64ea45ffec502d001c1fcd55.jpeg',
+      title: 'ワキノサトウリュウをよく見てみる',
+      text: 'かっこいいフォルムに魅了されてじっと見つめていると突然意識が飛んでしまった...',
+      actions: [
+        {
+          type: 'message',
+          label: '恐竜ワールド？',
+          text: '恐竜ワールド？',
+        },
+      ],
+    },
+  ],
+  イグアノドンの巣を見てみる: [
+    {
+      type: 'text',
+      text: 'イグアノドンの巣を見てみると、ちょうど卵から赤ちゃんが孵る様子を見ることができた。けっこうかわいいな。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ126',
+      image: 'https://scrapbox.io/files/64ea4697ceac19001b5e6e4d.jpeg',
+      title: 'イグアノドンの巣を見てみる',
+      text: 'そろそろ博物館も堪能できたことだし次の駅に行こうか。',
+      actions: [
+        {
+          type: 'message',
+          label: '八幡へ向かう',
+          text: '八幡へ向かう',
+        },
+      ],
+    },
+  ],
+  '恐竜ワールド？': [
+    {
+      type: 'message',
+      altText: 'シナリオ127',
+      image: 'https://scrapbox.io/files/64ea46717d31d8001b5be75b.jpg',
+      title: '恐竜ワールド？',
+      text: '目が覚めるとそこは白亜紀の地球だった。\n巨大な生物がひしめく世界で、生きていけるのか...?',
+      actions: [
+        {
+          type: 'message',
+          label: 'GameOver...',
+          text: 'GameOver...',
+        },
+      ],
+    },
+  ],
+  八幡へ向かう: [
+    {
+      type: 'message',
+      altText: 'シナリオ128',
+      image: 'https://scrapbox.io/files/64e8db15323bcd001c98b06a.jpeg',
+      title: '八幡へ向かう',
+      text: '八幡についた。\nこの近くには八幡製鐵所という世界遺産にもなった場所があるらしい。\nそこに行ってみよう。',
+      actions: [
+        {
+          type: 'message',
+          label: '八幡製鐵所に行く',
+          text: '八幡製鐵所に行く',
+        },
+      ],
+    },
+  ],
+  八幡製鐵所に行く: [
+    {
+      type: 'text',
+      text: '八幡製鐵所にやってきた。高い塔のような建物に「1901」の文字が大きく見える。',
+    },
+    {
+      type: 'text',
+      text: 'しばらくあたりを見ているとガイドをしている人を見つけた。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ129',
+      image: 'https://scrapbox.io/files/64ea46ecf5e61e001c84aa6e.jpeg',
+      title: '八幡製鐵所に行く',
+      text: 'せっかくなので話を聞いてみよう！',
+      actions: [
+        {
+          type: 'message',
+          label: 'ガイドから話を聞く',
+          text: 'ガイドから話を聞く',
+        },
+      ],
+    },
+  ],
+  ガイドから話を聞く: [
+    {
+      type: 'text',
+      text: 'ガイドの方は喜んでいろんなことを教えてくれた。',
+    },
+    {
+      type: 'text',
+      text: '日本で初めて作られた大型溶鉱炉であったこと。\n完成当初火入れをしてから3年経ってようやく本格的に動き始めたこと...',
+    },
+    {
+      type: 'text',
+      text: 'とても興味深い話を聞き明治時代の製鉄に思いを馳せることができた。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ130',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/d/d2/Governmental_Yawata_Iron_%26_Steel_Works.JPG',
+      title: 'ガイドから話を聞く',
+      text: 'ガイドの方が言うにはお土産屋が向こうにあるそうだ。\n行ってみよう。',
+      actions: [
+        {
+          type: 'message',
+          label: 'お土産屋にいく',
+          text: 'お土産屋にいく',
+        },
+      ],
+    },
+  ],
+  お土産屋にいく: [
+    {
+      type: 'text',
+      text: 'ネジチョコというネジそっくりなチョコが売られていた。',
+    },
+    {
+      type: 'text',
+      text: 'どうやら北九州が鉄鋼の街であることに因んで作られたお菓子らしい。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ131',
+      image: 'https://scrapbox.io/files/64ea47c88d5207001be87d32.jpeg',
+      title: 'お土産屋にいく',
+      text: 'お土産にネジチョコも買えたし、次の駅に向かうことにした。',
+      actions: [
+        {
+          type: 'message',
+          label: '黒崎へ向かう',
+          text: '黒崎へ向かう',
+        },
+      ],
+    },
+  ],
+  黒崎へ向かう: [
+    {
+      type: 'message',
+      altText: 'シナリオ132',
+      image: 'https://scrapbox.io/files/64e8dc5bed6629001d83d5ac.jpeg',
+      title: '黒崎へ向かう',
+      text: '黒崎についた。\n黒崎には北九州で誰もが知る有名なパン屋「シロヤ」の本店があるらしい。',
+      actions: [
+        {
+          type: 'message',
+          label: 'シロヤに行く',
+          text: 'シロヤに行く',
+        },
+      ],
+    },
+  ],
+  シロヤに行く: [
+    {
+      type: 'message',
+      altText: 'シナリオ133',
+      image: 'https://scrapbox.io/files/64ea48bb6428c4001b2a6aed.jpeg',
+      title: 'シロヤに行く',
+      text: 'シロヤといえば、サニーパンという練乳パンが有名らしい。買って食べ歩きをしよう。',
+      actions: [
+        {
+          type: 'message',
+          label: '練乳がない方から食べる',
+          text: '練乳がない方から食べる',
+        },
+        {
+          type: 'message',
+          label: '練乳が詰まっている方から食べる',
+          text: '練乳が詰まっている方から食べる',
+        },
+      ],
+    },
+  ],
+  練乳がない方から食べる: [
+    {
+      type: 'text',
+      text: '練乳がない方から食べ始めると、反対側から練乳が勢いよく飛び出してしまった！\nこんなにたっぷり詰まっているんだ！',
+    },
+    {
+      type: 'text',
+      text: 'しまった！\n飛び出した練乳が持っていた北九州一日乗車券にかかってベタベタに…',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ134',
+      image: 'https://cdn.mainichi.jp/vol1/2022/06/10/20220610k0000m040130000p/9.jpg?1',
+      title: '練乳がない方から食べる',
+      text: '機械で読み取れず、この乗車券はもう使えないようだ',
+      actions: [
+        {
+          type: 'message',
+          label: 'GameOver...',
+          text: 'GameOver...',
+        },
+      ],
+    },
+  ],
+  練乳が詰まっている方から食べる: [
+    {
+      type: 'text',
+      text: '練乳が詰まっている方から食べた。\n練乳たっぷりで最後の方まで甘くておいしい！',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ135',
+      image: 'https://scrapbox.io/files/64ea494e37ecca001bb964fc.jpeg',
+      title: '練乳が詰まっている方から食べる',
+      text: '練乳の甘さが癖になる、美味しいパンだった。\nさて、次の駅に行こうか',
+      actions: [
+        {
+          type: 'message',
+          label: '陣原へ向かう',
+          text: '陣原へ向かう',
+        },
+      ],
+    },
+  ],
+  陣原へ向かう: [
+    {
+      type: 'text',
+      text: '陣原にやってきた。',
+    },
+    {
+      type: 'text',
+      text: '...とは言ったもののこの地名なんて読むんだ?',
+    },
+    {
+      type: 'text',
+      text: 'おや！どうやら近くで北九州難読地名当てクイズ大会をやっているようだ。',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ136',
+      image: 'https://scrapbox.io/files/64e8de4a9ce963001ca77933.jpeg',
+      title: '陣原へ向かう',
+      text: '面白そう！クイズ大会に参加しよう！',
+      actions: [
+        {
+          type: 'message',
+          label: 'クイズ大会一問目',
+          text: 'クイズ大会一問目',
+        },
+      ],
+    },
+  ],
+  クイズ大会一問目: [
+    {
+      type: 'message',
+      altText: 'シナリオ137',
+      image: 'https://scrapbox.io/files/64ea4ae2144a8e001c22f951.png',
+      title: 'クイズ大会一問目',
+      text: '問題1: この地名の読み方はなんでしょう！',
+      actions: [
+        {
+          type: 'message',
+          label: 'ジンバラ',
+          text: 'ジンバラ',
+        },
+        {
+          type: 'message',
+          label: 'ジンゲン',
+          text: 'ジンゲン',
+        },
+        {
+          type: 'message',
+          label: 'ジンノハル',
+          text: 'ジンノハル',
+        },
+        {
+          type: 'message',
+          label: 'ジンノバラ',
+          text: 'ジンノバラ',
+        },
+      ],
+    },
+  ],
+  ジンバラ: [
+    {
+      type: 'text',
+      text: '残念！不正解！',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ138',
+      title: 'ジンバラ',
+      text: '間違えていたようだ。\nもう一度考えよう。',
+      actions: [
+        {
+          type: 'message',
+          label: 'クイズ大会一問目',
+          text: 'クイズ大会一問目',
+        },
+      ],
+    },
+  ],
+  ジンゲン: [
+    {
+      type: 'text',
+      text: '残念！不正解！',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ139',
+      title: 'ジンゲン',
+      text: '間違えていたようだ。\nもう一度考えよう。',
+      actions: [
+        {
+          type: 'message',
+          label: 'クイズ大会一問目',
+          text: 'クイズ大会一問目',
+        },
+      ],
+    },
+  ],
+  ジンノバラ: [
+    {
+      type: 'text',
+      text: '残念！不正解！',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ139',
+      title: 'ジンノバラ',
+      text: '間違えていたようだ。\nもう一度考えよう。',
+      actions: [
+        {
+          type: 'message',
+          label: 'クイズ大会一問目',
+          text: 'クイズ大会一問目',
+        },
+      ],
+    },
+  ],
+  ジンノハル: [
+    {
+      type: 'text',
+      text: '正解！\n答えは「ジンノハル」',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ140',
+      image: 'https://scrapbox.io/files/64ea4c3f9bae44001b1560e2.png',
+      title: 'ジンノハル',
+      text: '正解したようだ。\n…なんでこれがハルになるんだ？\nまぁ正解したことだし次の問題へ行こう',
+      actions: [
+        {
+          type: 'message',
+          label: 'クイズ大会二問目',
+          text: 'クイズ大会二問目',
+        },
+      ],
+    },
+  ],
+  クイズ大会二問目: [
+    {
+      type: 'message',
+      altText: 'シナリオ141',
+      image: 'https://scrapbox.io/files/64ea4c7cde4a07001c5ff09b.png',
+      title: 'クイズ大会二問目',
+      text: '問題2: この地名の読み方はなんでしょう！',
+      actions: [
+        {
+          type: 'message',
+          label: 'クサミ',
+          text: 'クサミ',
+        },
+        {
+          type: 'message',
+          label: 'キュウマイ',
+          text: 'キュウマイ',
+        },
+        {
+          type: 'message',
+          label: 'クモウ',
+          text: 'クモウ',
+        },
+        {
+          type: 'message',
+          label: 'キリメ',
+          text: 'キリメ',
+        },
+      ],
+    },
+  ],
+  キュウマイ: [
+    {
+      type: 'text',
+      text: '残念！不正解！',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ142',
+      title: 'キュウマイ',
+      text: '間違えていたようだ。\nもう一度考えよう。',
+      actions: [
+        {
+          type: 'message',
+          label: 'クイズ大会二問目',
+          text: 'クイズ大会二問目',
+        },
+      ],
+    },
+  ],
+  クモウ: [
+    {
+      type: 'text',
+      text: '残念！不正解！',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ143',
+      title: 'クモウ',
+      text: '間違えていたようだ。\nもう一度考えよう。',
+      actions: [
+        {
+          type: 'message',
+          label: 'クイズ大会二問目',
+          text: 'クイズ大会二問目',
+        },
+      ],
+    },
+  ],
+  キリメ: [
+    {
+      type: 'text',
+      text: '残念！不正解！',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ144',
+      title: 'キリメ',
+      text: '間違えていたようだ。\nもう一度考えよう。',
+      actions: [
+        {
+          type: 'message',
+          label: 'クイズ大会二問目',
+          text: 'クイズ大会二問目',
+        },
+      ],
+    },
+  ],
+  クサミ: [
+    {
+      type: 'text',
+      text: '正解！\n答えは「クサミ」',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ145',
+      image: 'https://scrapbox.io/files/64ea4c3f9bae44001b1560e2.png',
+      title: 'クサミ',
+      text: '正解したようだ。\nうーん…なるほどわからん！\nさあ次が最終問題だ！',
+      actions: [
+        {
+          type: 'message',
+          label: 'クイズ大会三問目',
+          text: 'クイズ大会三問目',
+        },
+      ],
+    },
+  ],
+  クイズ大会三問目: [
+    {
+      type: 'message',
+      altText: 'シナリオ146',
+      image: 'https://scrapbox.io/files/64ea4ef01d66db001ced00f8.png',
+      title: 'クイズ大会三問目',
+      text: '最終問題: この地名の読み方はなんでしょう！',
+      actions: [
+        {
+          type: 'message',
+          label: 'クキュウオカ',
+          text: 'クキュウオカ',
+        },
+        {
+          type: 'message',
+          label: 'キキュウノオカ',
+          text: 'キキュウノオカ',
+        },
+        {
+          type: 'message',
+          label: 'キクガオカ',
+          text: 'キクガオカ',
+        },
+        {
+          type: 'message',
+          label: 'クワキュウノオカ',
+          text: 'クワキュウノオカ',
+        },
+      ],
+    },
+  ],
+  クキュウオカ: [
+    {
+      type: 'text',
+      text: '残念！不正解！',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ147',
+      title: 'クキュウオカ',
+      text: '間違えていたようだ。\nもう一度考えよう。',
+      actions: [
+        {
+          type: 'message',
+          label: 'クイズ大会三問目',
+          text: 'クイズ大会三問目',
+        },
+      ],
+    },
+  ],
+  キキュウノオカ: [
+    {
+      type: 'text',
+      text: '残念！不正解！',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ148',
+      title: 'キキュウノオカ',
+      text: '間違えていたようだ。\nもう一度考えよう。',
+      actions: [
+        {
+          type: 'message',
+          label: 'クイズ大会三問目',
+          text: 'クイズ大会三問目',
+        },
+      ],
+    },
+  ],
+  クワキュウノオカ: [
+    {
+      type: 'text',
+      text: '残念！不正解！',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ149',
+      title: 'クワキュウノオカ',
+      text: '間違えていたようだ。\nもう一度考えよう。',
+      actions: [
+        {
+          type: 'message',
+          label: 'クイズ大会三問目',
+          text: 'クイズ大会三問目',
+        },
+      ],
+    },
+  ],
+  キクガオカ: [
+    {
+      type: 'text',
+      text: '正解！\n答えは「キクガオカ」',
+    },
+    {
+      type: 'message',
+      altText: 'シナリオ150',
+      image: 'https://scrapbox.io/files/64ea4c3f9bae44001b1560e2.png',
+      title: 'キクガオカ',
+      text: '正解したようだ。\n読めば読むほど不思議な感じ\nでもこれで全問正解だ！',
+      actions: [
+        {
+          type: 'message',
+          label: '全問正解の景品',
           text: '未実装',
         },
       ],
     },
   ],
+  // 全問正解の景品: [
+  //   {
+  //     type: 'text',
+  //     text: '',
+  //   },
+  //   {
+  //     type: 'message',
+  //     altText: '',
+  //     image: '',
+  //     title: '',
+  //     text: '',
+  //     actions: [
+  //       {
+  //         type: 'message',
+  //         label: '',
+  //         text: '',
+  //       },
+  //     ],
+  //   },
+  // ],
   ダミー: [
     {
       type: 'text',
