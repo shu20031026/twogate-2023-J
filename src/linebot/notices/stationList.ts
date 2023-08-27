@@ -210,7 +210,7 @@ export const stationList: StationData[] = [
     name: '黒崎',
     route: ['鹿児島本線'],
     image: 'https://scrapbox.io/files/64e8dc5bed6629001d83d5ac.jpeg',
-    keyScenario: '黒崎についた',
+    keyScenario: '黒崎へ向かう',
     text: `
 北九州市内で1日の利用客数がトップ3に入るくらい利用者が多い駅になる。
 小倉に負けないくらいのお店の多さで、辺りには多くの看板が立っている。
@@ -478,7 +478,7 @@ export const stationList: StationData[] = [
     name: '志井公園',
     route: ['日田彦山線'],
     image: 'https://scrapbox.io/files/64e8cd20503e0c001cde6ae4.jpeg',
-    keyScenario: '志井公園に向かう',
+    keyScenario: '志井公園へ向かう',
     text: `
 近くにアドベンチャープールという人気のプールがあり、夏場の利用者は多くなる。
 何を隠そう志井公園は我らが北九州高専の最寄り駅である。
@@ -520,7 +520,7 @@ export const stationList: StationData[] = [
     name: '石原町',
     route: ['日田彦山線'],
     image: 'https://scrapbox.io/files/64e8d100e6cdbb001cf32b26.jpeg',
-    keyScenario: '石原町に向かう',
+    keyScenario: '石原町へ向かう',
     text: `
 立地的に作中で書かれるほど近くはないが一応平尾台の最寄り駅。
 
@@ -548,27 +548,6 @@ export const stationList: StationData[] = [
       {
         url: 'https://tabelog.com/fukuoka/A4004/A400502/40049254/',
         about: 'そば茶屋 青空みあん - 食べログ',
-      },
-    ],
-  },
-  {
-    name: '競馬場前',
-    route: ['北九州モノレール'],
-    image: 'https://scrapbox.io/files/64e8ec948ce3ce001bd39990.jpeg',
-    keyScenario: '競馬場前へ行く',
-    text: `
-小倉競馬場の前にあるモノレールの駅。
-レースやイベントがある時には人だかりができる。
-ギャンブルは節度を持って楽しもう！
-
-また、度々出てくる「ラーメンだるま」の北方店の最寄り駅でもある。高専からの最寄り店舗のため放課後に利用する高専生も多い。
-北方店は他の店舗と比べて油が控えめでさっぱりした食べ心地である。
-作者のおすすめは汁なしに豚マシと粉チーズを追加カスタマイズ。実質カルボナーラ(過言)。
-`,
-    references: [
-      {
-        url: 'https://www.jra.go.jp/facilities/race/kokura/',
-        about: '小倉競馬場',
       },
     ],
   },
