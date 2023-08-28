@@ -83,6 +83,10 @@ export const noticeList: noticeObj = {
   ],
   西小倉へ行く: [
     {
+      type: 'text',
+      text: 'まずは鹿児島本線に日豊本線・日田彦山線といろんな路線につながっていく西小倉駅方面に行こう！',
+    },
+    {
       type: 'message',
       image: 'https://scrapbox.io/files/64e8806412a993001c477116.jpeg',
       altText: 'シナリオ1',
@@ -98,6 +102,10 @@ export const noticeList: noticeObj = {
     },
   ],
   門司へ行く: [
+    {
+      type: 'text',
+      text: '門司方面の路線を選んだ！\n鹿児島本線で福岡の最北端「門司港」を目指そう！',
+    },
     {
       type: 'message',
       altText: 'シナリオ2',
@@ -266,7 +274,7 @@ export const noticeList: noticeObj = {
       image: 'https://www.kitakyushu-museum.jp/images/2020/org-20201023_ba981f7672613043b1f34c3d0483bb55.jpg',
       altText: 'シナリオ10',
       title: 'ゲームをプレイする',
-      text: '北九州の観光をそっちのけでゲームをプレイしてしまった...\nもう日が暮れてしまったようだ...',
+      text: '北九州の観光をそっちのけでゲームをプレイしてしまった...\nもう日が暮れてしまったようだ..\nせっかく北九州に来たならもっと北九州を満喫すればよかったな',
       actions: [
         {
           type: 'message',
@@ -277,6 +285,10 @@ export const noticeList: noticeObj = {
     },
   ],
   南小倉へ行く: [
+    {
+      type: 'text',
+      text: '西小倉方面に進んで、ひとまずは東端の「朽網駅」を目指そう！',
+    },
     {
       type: 'message',
       image: 'https://scrapbox.io/files/64e8831689d4f5001c4ddd39.jpeg?type=thumbnail',
@@ -293,6 +305,10 @@ export const noticeList: noticeObj = {
     },
   ],
   九州工大前に向かう: [
+    {
+      type: 'text',
+      text: '鹿児島本線で西方面に向かって、若松線への乗換駅「折尾」を目指そう',
+    },
     {
       type: 'message',
       image: 'https://scrapbox.io/files/64e8d49cfddf09001b8418ce.jpeg',
@@ -808,6 +824,10 @@ export const noticeList: noticeObj = {
     },
   ],
   安部山公園に行く: [
+    {
+      type: 'text',
+      text: 'このまま日豊本線を突き進んで東端の「朽網」に向かおう！',
+    },
     {
       type: 'text',
       text: '安部山公園についた。\nここの近くに九州をメインに展開している資さんうどんの本店があるらしい。',
@@ -2150,6 +2170,10 @@ export const noticeList: noticeObj = {
   折尾へ向かう: [
     {
       type: 'text',
+      text: '鹿児島本線はこの先遠賀町に向かっているらしい。\n北九州市を隅々まで巡るために若松線に乗り換えて「若松駅」を目指そう',
+    },
+    {
+      type: 'text',
       text: '折尾へついた。\n電車を降りた途端美味しそうな香りが漂ってきた。',
     },
     {
@@ -2564,6 +2588,10 @@ export const noticeList: noticeObj = {
     },
   ],
   石田に行く: [
+    {
+      type: 'text',
+      text: '日豊本線から乗り換えて日田彦山線で山奥の無人駅「呼野」を目指そう',
+    },
     {
       type: 'text',
       text: '石田についた。\n無人駅で周りには田畑が広がっていて穏やかな田舎町といった雰囲気だ。',

@@ -30,7 +30,8 @@ const HomePage: NextPage = () => {
     <DefaultLayout>
       <div className={'bg-orange-100 text-gray-800 p-6'}>
         <h1 className={'text-2xl text-orange-600 text-center font-bold my-4'}>KitaQ</h1>
-        <h1 className={'text-4xl text-orange-600 text-center font-bold my-4'}>駅図鑑</h1>
+        <h1 className={'text-4xl text-orange-600 text-center font-bold my-4'}>キタコレ</h1>
+        <h1 className={'text-xl text-orange-600 text-center font-bold my-4'}>〜キタキューコレクション〜</h1>
 
         {isLoading ? (
           <div></div>
@@ -42,10 +43,6 @@ const HomePage: NextPage = () => {
                   <td className='p-2'>プレイヤー名</td>
                   <td className='p-2'>{user!.name}</td>
                 </tr>
-                {/* <tr>
-                  <td className='p-2'>userUid</td>
-                  <td className='p-2'>：{user!.userUid}</td>
-                </tr> */}
               </tbody>
             </table>
             <div>
@@ -58,11 +55,11 @@ const HomePage: NextPage = () => {
                   if (userData.userId === '123456789' || userData.readScenario.includes(item.keyScenario)) {
                     return (
                       <div key={index} className='w-1/3 p-1.5' onClick={() => openModalHandler(item)}>
-                        <div className='w-full bg-white h-40 rounded-lg shadow-md relative'>
-                          <h1 className='pt-2 text-center font-medium text-gray-800'>{item.name}</h1>
+                        <div className='w-full bg-orange-600 h-32 rounded-lg shadow-lg relative'>
+                          <h1 className='pt-2 text-center font-medium text-white'>{item.name}</h1>
                           <img
                             src={item.image}
-                            className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-auto h-20 object-cover'
+                            className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 w-full h-auto h-20 object-cover'
                           ></img>
                         </div>
                       </div>
