@@ -17,7 +17,11 @@ export const commandList: commandObj = {
     },
     {
       type: 'text',
-      text: '出てくるボタンを選択してゲームを進めるとあなたが行動できる選択が表示されます。\nあなたの選択でいい結果になることもあれば悪い結果になることも？',
+      text: '出てきたボタンを選択・タップしてゲームを進めるとあなたが行動できる選択が表示されます。',
+    },
+    {
+      type: 'text',
+      text: 'あなたの選択によって進む鉄道路線が決まり、良い結果になることもGameOverになっちゃうことも…',
     },
     {
       type: 'text',
@@ -36,7 +40,7 @@ export const commandList: commandObj = {
         },
         {
           type: 'uri',
-          label: '駅図鑑',
+          label: 'キタコレ〜キタキューコレクション〜',
           uri: 'https://liff.line.me/2000511797-WMOglq88',
         },
       ],
