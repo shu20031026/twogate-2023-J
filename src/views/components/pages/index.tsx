@@ -70,11 +70,11 @@ const HomePage: NextPage = () => {
                         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 m-0 p-0 z-10'>
                           <p className='text-white font-bold text-lg px-4 py-1 rounded whitespace-nowrap'>未開放</p>
                         </div>
-                        <div className='w-full bg-gray-300 h-40 rounded-lg shadow-md relative'>
+                        <div className='w-full bg-gray-300 h-32 rounded-lg shadow-md relative'>
                           <h1 className='pt-2 text-center text-white font-medium'>???</h1>
                           <img
                             src={item.image}
-                            className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-auto h-20 object-cover filter blur-md'
+                            className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 w-full h-auto h-20 object-cover filter blur-md'
                           ></img>
                         </div>
                       </div>
