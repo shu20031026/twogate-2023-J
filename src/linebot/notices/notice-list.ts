@@ -274,7 +274,7 @@ export const noticeList: noticeObj = {
       image: 'https://www.kitakyushu-museum.jp/images/2020/org-20201023_ba981f7672613043b1f34c3d0483bb55.jpg',
       altText: 'シナリオ10',
       title: 'ゲームをプレイする',
-      text: '北九州の観光をそっちのけでゲームをプレイしてしまった...\nもう日が暮れてしまったようだ..\nせっかく北九州に来たならもっと北九州を満喫すればよかったな',
+      text: '北九州の観光をそっちのけでゲームをプレイしてしまいも日が暮れてしまったようだ...もっと北九州を満喫すればよかったな',
       actions: [
         {
           type: 'message',
